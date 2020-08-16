@@ -7,7 +7,7 @@
     <!-- 最新版本的 Bootstrap 核心 CSS 文件 -->
     <link rel="stylesheet" href="https://2020.imon.tk/media/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://2020.imon.tk/styles/main.css">
-    <title>Gridea</title>
+    <title>Monの小屋</title>
 </head>
 
 
@@ -18,6 +18,114 @@
             <div class="row">
                 <div class="side"><body>
     
+    <div id=side>
+        <div class="avatar-border">
+            <img src="https://2020.imon.tk/images/avatar.png?v=1597549040732" class="avatar">
+        </div>
+        <div class="sitename">Monの小屋</div>
+        <span class="describtion" data-text='["全新启航"]'>&nbsp;</span>
+        
+        <div class="search">
+            <!-- <input type="text" class="search-input" placeholder="标题搜索(●'◡'●)" /> -->
+            <input type="text" class="search-input" placeholder="标题搜索 ⚆_⚆ つ♡">
+            <div class="search-results"></div>
+        </div>
+        
+    <div class="share-button">
+        <span>社交按钮</span>
+        
+        
+        
+        
+        
+        
+    </div>
+    <div id="qq" style="display:none"></div>
+    
+    
+    <div class="mchocie describtion">
+        <a href="/" class="menubutton">
+            首页
+        </a>
+    </div>
+    
+    
+    
+    <div class="mchocie describtion">
+        <a href="/archives" class="menubutton">
+            归档
+        </a>
+    </div>
+    
+    
+    
+    <div class="mchocie describtion">
+        <a href="/tags" class="menubutton">
+            标签
+        </a>
+    </div>
+    
+    
+    
+    <div class="mchocie describtion">
+        <a href="/post/about" class="menubutton">
+            关于
+        </a>
+    </div>
+    
+    
+    
+    
+    <div class="mchocie describtion">
+        <a href="https://2020.imon.tk/friends" class="menubutton">友人帐</a>
+    </div>
+    
+    <hr>
+    <div id="footinfo">Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a> | Theme: <a
+        href="https://github.com/850552586/gridea-theme-fog">Fog</a></div>
+    
+    <div id="sitegotimeDate">载入天数...</div>
+    <div id="sitegotimes">载入时分秒...</div>
+    <div id="cussitetime" style="display:none">25/12/2018</div>
+    
+    
+    </div>
+
+
+<script src="https://2020.imon.tk/media/js/wordshow.js"></script>
+    
+    <script>
+        //----------------------站点运行时间
+        var now = new Date();
+
+        function createtime() {
+            var sitegotime = document.getElementById("cussitetime").innerHTML + " 00:00:00";
+            var grt = new Date(sitegotime); //此处修改你的建站时间或者网站上线时间
+            now.setTime(now.getTime() + 250);
+            days = (now - grt) / 1000 / 60 / 60 / 24;
+            dnum = Math.floor(days);
+            hours = (now - grt) / 1000 / 60 / 60 - (24 * dnum);
+            hnum = Math.floor(hours);
+            if (String(hnum).length == 1) {
+                hnum = "0" + hnum;
+            }
+            minutes = (now - grt) / 1000 / 60 - (24 * 60 * dnum) - (60 * hnum);
+            mnum = Math.floor(minutes);
+            if (String(mnum).length == 1) {
+                mnum = "0" + mnum;
+            }
+            seconds = (now - grt) / 1000 - (24 * 60 * 60 * dnum) - (60 * 60 * hnum) - (60 * mnum);
+            snum = Math.round(seconds);
+            if (String(snum).length == 1) {
+                snum = "0" + snum;
+            }
+            document.getElementById("sitegotimeDate").innerHTML = "本站已安全运行 " + dnum + " 天 ";
+            document.getElementById("sitegotimes").innerHTML = hnum + " 小时 " + mnum + " 分 " + snum + " 秒";
+        }
+        setInterval("createtime()", 250);
+    </script>
+    
+
 
 
 
@@ -155,14 +263,14 @@
 </script>
 </div>
                 
-                <div id="main" class="col-xs-12 col-sm-7" style="width:50%;margin-top:50px;left:27%">
-                    <div class="tagsbackgroundtop"></div>
+                <div id="main" class="col-xs-12 col-sm-7">
+                    <div class="tagsbackgroundleft"></div>
                     <div class="tags-container">
                         
                         <img class="tagsimg" src="" alt="">
                         
                         
-                        <a class="tag" href="https://2020.imon.tk/tag/mXuoftFqS/"># Gridea</a>
+                        <a class="tag" href="https://2020.imon.tk/mXuoftFqS/"># Gridea</a>
                         
                     </div>
                 </div>
@@ -170,13 +278,39 @@
                 <div class="col-xs-6 col-sm-2"></div>
             </div>
             
+                <head>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css">
+</head>
+<body>
+    <div class="miniMode">
+        <meting-js id="myaplayer" server="netease" type="playlist" fixed="true" order="default">
+        </meting-js>
+    </div>   
+</body>
+
+
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js"></script>
+<script>
+    var aplayerid = "";
+    var aplayerserver = "netease";
+    var aplayerorder = "random";
+    var aplayer = $("#myaplayer");
+    aplayer.attr("server",aplayerserver);
+    aplayer.attr("id",aplayerid);
+    aplayer.attr("order",aplayerorder);
+</script>
+
+<script src="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js"></script>
+<!-- require MetingJS -->
+<script src="https://cdn.jsdelivr.net/npm/meting@2/dist/Meting.min.js"></script>
+            
         </div>
         <div id="bg">
         </div>
-        <div id="bgchoice" style="display: none">
+        <div id="bgchoice" style="display: none">link
             </div>
             
-            <div id="bgurl" style="display:none"></div>
+            <div id="bgurl" style="display:none">http://www.dmoe.cc/random.php</div>
                
     </div>
 
@@ -199,7 +333,7 @@
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </button>
-        <a class="navbar-brand" href="https://2020.imon.tk">Gridea&nbsp;&nbsp;|</a>
+        <a class="navbar-brand" href="https://2020.imon.tk">Monの小屋&nbsp;&nbsp;|</a>
       </div>
 
       <!-- Collect the nav links, forms, and other content for toggling -->
@@ -239,6 +373,9 @@
           
           
           
+          
+          <li><a href="https://2020.imon.tk/friends">友链</a></li>
+
           
         </ul>
       </div><!-- /.navbar-collapse -->
@@ -282,7 +419,7 @@
                 <img class="tagsimg" src="" alt="">
                 
             
-                <a class="tag" href="https://2020.imon.tk/tag/mXuoftFqS/"># Gridea</a>
+                <a class="tag" href="https://2020.imon.tk/mXuoftFqS/"># Gridea</a>
                 
             </div>
         </div>
@@ -301,6 +438,16 @@
     });
 </script>
 
+<script type="text/javascript">
+    var message_Path = '/live2d/'
+    var home_Path = document.getElementById("domainname").innerHTML+"/"; //此处修改为你的域名，必须带斜杠
+</script>
+<script type="text/javascript" src="https://2020.imon.tk/media/live2d/js/live2d.js"></script>
+<script type="text/javascript" src="https://2020.imon.tk/media/live2d/js/message.js"></script>
+<script type="text/javascript">
+    loadlive2d("live2d", "https://2020.imon.tk/media/live2d/assets/tororo.model.json");
+</script>
+
 
 <script>
         var bgchoice=$('#bgchoice').html();
@@ -311,3 +458,5 @@
                 bgurl = bgurl.replace("\\", "/");
         bg.css("background", "url('" + bgurl + "')");
 </script>
+
+    <script src="https://2020.imon.tk/media/js/index.js"></script>
