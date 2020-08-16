@@ -21,7 +21,7 @@
     
     <div id=side>
         <div class="avatar-border">
-            <img src="https://2020.imon.tk/images/avatar.png?v=1597549040732" class="avatar">
+            <img src="https://2020.imon.tk/images/avatar.png?v=1597562489500" class="avatar">
         </div>
         <div class="sitename">Monの小屋</div>
         <span class="describtion" data-text='["全新启航"]'>&nbsp;</span>
@@ -36,12 +36,14 @@
         <span>社交按钮</span>
         
         
+        <a onclick="showqq()"><i style="font-size: 20px;"><img class="icon" src="https://2020.imon.tk/media/images/QQ.png" alt=""></i></a>
+        
         
         
         
         
     </div>
-    <div id="qq" style="display:none"></div>
+    <div id="qq" style="display:none">911696662</div>
     
     
     <div class="mchocie describtion">
@@ -82,12 +84,10 @@
     </div>
     
     <hr>
-    <div id="footinfo">Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a> | Theme: <a
-        href="https://github.com/850552586/gridea-theme-fog">Fog</a></div>
     
     <div id="sitegotimeDate">载入天数...</div>
     <div id="sitegotimes">载入时分秒...</div>
-    <div id="cussitetime" style="display:none">25/12/2018</div>
+    <div id="cussitetime" style="display:none">12/22/2018</div>
     
     
     </div>
@@ -120,7 +120,7 @@
             if (String(snum).length == 1) {
                 snum = "0" + snum;
             }
-            document.getElementById("sitegotimeDate").innerHTML = "本站已安全运行 " + dnum + " 天 ";
+            document.getElementById("sitegotimeDate").innerHTML = "本站已艰难的存活了 " + dnum + " 天 ";
             document.getElementById("sitegotimes").innerHTML = hnum + " 小时 " + mnum + " 分 " + snum + " 秒";
         }
         setInterval("createtime()", 250);
