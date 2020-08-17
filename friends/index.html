@@ -20,7 +20,7 @@
     
     <div id=side>
         <div class="avatar-border">
-            <img src="https://2020.imon.tk/images/avatar.png?v=1597639473587" class="avatar">
+            <img src="https://2020.imon.tk/images/avatar.png?v=1597639882201" class="avatar">
         </div>
         <div class="sitename">Monの小屋</div>
         <span class="describtion" data-text='["全新启航"]'>&nbsp;</span>
@@ -280,30 +280,53 @@
                     <div id="comment" style="background: white">
                         <div class="commentcontainer">
                             
-                            
-                            <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
-<script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
+                            <style>
+    @media screen and (min-width: 1300px) {
+        .veditor::placeholder {
+            color: #b3b3b3;
+            font-size: 18px;
+            text-align: center;
+            line-height: 3rem;
+            font-family: kaiti;
+        }
+    }
+</style>
 
-<div id="gitalk-container"></div>
-
-<script>
-
-  var gitalk = new Gitalk({
-    clientID: 'd54412008b14278356c5',
-    clientSecret: '807eddf5744c7fb47266e450856eb9355650090d',
-    repo: 'mon',
-    owner: 'mon030',
-    admin: ['mon030'],
-    id: (location.pathname).substring(0, 49),      // Ensure uniqueness and length less than 50
-    distractionFreeMode: false  // Facebook-like distraction free mode
-  })
-
-  gitalk.render('gitalk-container')
-
-</script>
-
-                            
-                            
+<body>
+    <div id="vcomments">
+    </div>
+    <script src='https://2020.imon.tk/media/js/valine.min.js'></script>
+    <script src="https://2020.imon.tk/media/js/jquery.min.js"></script>
+    <script src="https://sdk.jinrishici.com/v2/browser/jinrishici.js" charset="utf-8"></script>
+    <script>
+        new Valine({
+            el: '#vcomments',
+            appId: 'XSTvTH8hCc1P8pImkTeYjn3J-MdYXbMMI',
+            appKey: 'kXutj0u4Ba3ykGGHMQYPf1vx',
+            notify: true,
+            verify: false,
+            avatar: 'retro',
+            pageSize: 10,
+            placeholder: '既然来了，何不畅所欲言呢？',
+            visitor: true, // 阅读量统计
+        });
+    </script>
+    <script type="text/javascript">
+        // jinrishici.load(function (result) {
+        //     var jrsc_plac = result.data.content + "\n「" + result.data.origin.title + "」" + result.data.origin
+        //         .dynasty + " · " + result.data.origin.author;
+        //     if (jrsc_plac != undefined)
+        //         document.getElementById("veditor").setAttribute("placeholder", jrsc_plac);
+        // 
+        var jrsc = '既然来了，何不畅所欲言呢？';
+        jinrishici.load(function (result) {
+                // 自己的处理逻辑
+                jrsc = result.data.content + "\n「" + result.data.origin.title + "」" + result.data.origin
+                 .dynasty + " · " + result.data.origin.author;
+            });
+    </script> 
+</body>
+                            <div class="clear"></div>
                             
                         </div>
                     </div>
@@ -463,30 +486,29 @@
         <div name="comment" style="background: white">
             <div class="commentcontainer">
                 
-                
-                <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
-<script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
+                <body>
+    <div id="vcomments1"></div>
 
-<div id="gitalk-container"></div>
-
+<script src='https://2020.imon.tk/media/js/valine.min.js'></script>
+<script src="https://2020.imon.tk/media/js/jquery.min.js"></script>
+<script src="https://sdk.jinrishici.com/v2/browser/jinrishici.js" charset="utf-8"></script>
 <script>
-
-  var gitalk = new Gitalk({
-    clientID: 'd54412008b14278356c5',
-    clientSecret: '807eddf5744c7fb47266e450856eb9355650090d',
-    repo: 'mon',
-    owner: 'mon030',
-    admin: ['mon030'],
-    id: (location.pathname).substring(0, 49),      // Ensure uniqueness and length less than 50
-    distractionFreeMode: false  // Facebook-like distraction free mode
-  })
-
-  gitalk.render('gitalk-container')
-
+    new Valine({
+        el: '#vcomments1',
+        appId: 'XSTvTH8hCc1P8pImkTeYjn3J-MdYXbMMI',
+        appKey: 'kXutj0u4Ba3ykGGHMQYPf1vx',
+        notify: true,
+        verify: false,
+        avatar: 'retro',
+        pageSize: 10,
+        placeholder: '既然来了，那就留个痕迹吧~',
+        visitor: true // 阅读量统计
+    })
 </script>
 
-                
-                
+</body>
+
+                <div class="clear"></div>
                 
             </div>
         </div>
