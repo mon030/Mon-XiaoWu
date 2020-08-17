@@ -20,7 +20,7 @@
     
     <div id=side>
         <div class="avatar-border">
-            <img src="https://2020.imon.tk/images/avatar.png?v=1597640002382" class="avatar">
+            <img src="https://2020.imon.tk/images/avatar.png?v=1597641038994" class="avatar">
         </div>
         <div class="sitename">Monの小屋</div>
         <span class="describtion" data-text='["全新启航"]'>&nbsp;</span>
@@ -83,6 +83,42 @@
     </div>
     
     <hr>
+    <div id="footinfo"><span style="font-family:Kaiti; font-size: 32px; color: #DE2E24; text-shadow: #B3231B 2px 4px 4px;">不敢高声语  恐惊天上人</span>
+<div class="sidebar-box ggw3">
+  <div id="music_container"></div>
+<script src="https://estertion.github.io/LightWeightMusicPlayer/musicplayer.min.js"></script>
+<script>
+window.player=new MusicPlayer({
+	element:document.getElementById('music_container'),
+	src:'https://mon030.github.io/mon030/1421688572.mp3',
+	id:'LightWeightPlayer',
+	borderWidth:'1px',
+	autoPlay:true,
+	loop:true,
+	/*color:{
+		'played':'#E05959',
+		'buffered':'#FFA7A7',
+		'blank':'#EEE',
+		'border':'#DDD'
+	}*/
+	color:{
+		played:'rgba('+[Math.round(Math.random()*255),Math.round(Math.random()*255),Math.round(Math.random()*255),Math.random()/2+.5].join(',')+')',
+		buffered:'rgba('+[Math.round(Math.random()*255),Math.round(Math.random()*255),Math.round(Math.random()*255),Math.random()/2+.5].join(',')+')',
+		blank:'rgba('+[Math.round(Math.random()*255),Math.round(Math.random()*255),Math.round(Math.random()*255),Math.random()/2+.5].join(',')+')',
+		border:'rgba('+[Math.round(Math.random()*255),Math.round(Math.random()*255),Math.round(Math.random()*255),Math.random()/2+.5].join(',')+')'
+	}
+})
+	</script> 
+<span style="color: #999999;"><strong>正在播放&nbsp;&nbsp;[天文学者]&nbsp;&nbsp;&nbsp;&nbsp;Music / 植川理一
+Vocal / 鏡音レン (Edited by Izumi)</strong></span>&nbsp;
+<a href="https://imon.tk/%e5%a4%a9%e6%96%87%e5%ad%a6%e8%80%85/">点我查看歌词~</a>
+
+&nbsp;</div>
+
+
+        </div>
+      </div>
+    </div></div>
     
     <div id="sitegotimeDate">载入天数...</div>
     <div id="sitegotimes">载入时分秒...</div>
@@ -119,7 +155,7 @@
             if (String(snum).length == 1) {
                 snum = "0" + snum;
             }
-            document.getElementById("sitegotimeDate").innerHTML = "本站已艰难的存活了 " + dnum + " 天 ";
+            document.getElementById("sitegotimeDate").innerHTML = "本站已安全运行 " + dnum + " 天 ";
             document.getElementById("sitegotimes").innerHTML = hnum + " 小时 " + mnum + " 分 " + snum + " 秒";
         }
         setInterval("createtime()", 250);
@@ -381,32 +417,6 @@
                 <div class="col-xs-6 col-sm-2"></div>
             </div>
             
-                <head>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css">
-</head>
-<body>
-    <div class="miniMode">
-        <meting-js id="myaplayer" server="netease" type="playlist" fixed="true" order="default">
-        </meting-js>
-    </div>   
-</body>
-
-
-<script src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js"></script>
-<script>
-    var aplayerid = "640373432";
-    var aplayerserver = "netease";
-    var aplayerorder = "random";
-    var aplayer = $("#myaplayer");
-    aplayer.attr("server",aplayerserver);
-    aplayer.attr("id",aplayerid);
-    aplayer.attr("order",aplayerorder);
-</script>
-
-<script src="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js"></script>
-<!-- require MetingJS -->
-<script src="https://cdn.jsdelivr.net/npm/meting@2/dist/Meting.min.js"></script>
-            
         </div>
         <div id="bg">
         </div>
@@ -490,7 +500,7 @@
                 <img src="' + talks[i].img + '" class="talkimg"> \
                 <div class="ainfo">\
                     <div class="ainfo-intro">\
-                        <img class="intro1" src="https://2020.imon.tk/images/avatar.png?v=1597640002382">\
+                        <img class="intro1" src="https://2020.imon.tk/images/avatar.png?v=1597641038994">\
                         <div class="author">' + talks[i].author + '</div>·\
                         <div class="time">' + talks[i].time + '</div>\
                     </div>\
@@ -503,7 +513,7 @@
             <div class="talk" v-for="t in talks"> \
                 <div class="ainfo">\
                     <div class="ainfo-intro">\
-                        <img class="intro1" src="https://2020.imon.tk/images/avatar.png?v=1597640002382">\
+                        <img class="intro1" src="https://2020.imon.tk/images/avatar.png?v=1597641038994">\
                         <div class="author">' + talks[i].author + '</div>·\
                         <div class="time">' + talks[i].time + '</div>\
                     </div>\
