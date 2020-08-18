@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://2020.imon.tk</id>
     <title>Monの小屋</title>
-    <updated>2020-08-18T08:47:32.886Z</updated>
+    <updated>2020-08-18T09:45:14.829Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://2020.imon.tk"/>
     <link rel="self" href="https://2020.imon.tk/atom.xml"/>
@@ -10,6 +10,38 @@
     <logo>https://2020.imon.tk/images/avatar.png</logo>
     <icon>https://2020.imon.tk/favicon.ico</icon>
     <rights>All rights reserved 2020, Monの小屋</rights>
+    <entry>
+        <title type="html"><![CDATA[2020,新的开始]]></title>
+        <id>https://2020.imon.tk/nihao/</id>
+        <link href="https://2020.imon.tk/nihao/">
+        </link>
+        <updated>2020-08-18T09:10:48.000Z</updated>
+        <content type="html"><![CDATA[<h2 id="新的博客弄好啦">新的博客弄好啦!</h2>
+<p>从Wordpress转到Gridea。</p>
+<p>主题来自Ericam的fog主题。</p>
+<p>改了一点东西，比如原本的aplayer音乐播放器换成了LightWeightPlayer</p>
+<p>背景的透明度增加了一些,并且换成了随机ACG壁纸的背景。</p>
+<p>live2d看板娘换成了看板郎~</p>
+<h2 id="近期打算">近期打算</h2>
+<ul>
+<li>
+<p>把之前旧的文章搬过来</p>
+</li>
+<li>
+<p>完善新小屋的seo</p>
+</li>
+<li>
+<p>把主题改成自己喜欢的样子</p>
+</li>
+<li>
+<p>熟悉用Markdown来写文章</p>
+</li>
+<li>
+<p>and so on...</p>
+</li>
+</ul>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Hello Gridea]]></title>
         <id>https://2020.imon.tk/hello-gridea/</id>
