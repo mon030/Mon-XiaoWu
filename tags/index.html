@@ -8,10 +8,55 @@
     <link rel="stylesheet" href="https://2020.imon.tk/media/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://2020.imon.tk/styles/main.css">
     <title>Monの小屋</title>
+	
+		<!-- 百度的统计代码 -->
+	<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?cf2ad89bfc86b223a831cfae7db9aa7e";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+
+<!-- 谷歌Analytics -->
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-N9F6R5GLG5"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-N9F6R5GLG5');
+</script>
+
 </head>
 
-
 <body>
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/7.18.0/firebase-app.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="https://www.gstatic.com/firebasejs/7.18.0/firebase-analytics.js"></script>
+
+<script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyBJ5N8zMQHCvEsyZkgxwSaecdf-yu7TuSg",
+    authDomain: "mon-s-house.firebaseapp.com",
+    databaseURL: "https://mon-s-house.firebaseio.com",
+    projectId: "mon-s-house",
+    storageBucket: "mon-s-house.appspot.com",
+    messagingSenderId: "178180502199",
+    appId: "1:178180502199:web:b37f98aaff5eb29e659332",
+    measurementId: "G-Y3F14J5E8G"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  firebase.analytics();
+</script>
     <!-- 响应式布局，针对PC端内容显示 -->
     <div id="content">
         <div class="nav-large">
@@ -20,7 +65,7 @@
     
     <div id=side>
         <div class="avatar-border">
-            <img src="https://2020.imon.tk/images/avatar.png?v=1597718395012" class="avatar">
+            <img src="https://2020.imon.tk/images/avatar.png?v=1597719963559" class="avatar">
         </div>
         <div class="sitename">Monの小屋</div>
         <span class="describtion" data-text='["全新启航"]'>&nbsp;</span>
