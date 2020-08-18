@@ -1,12 +1,12 @@
 #landlord {
     user-select: none;
     width: 200px;
-    height: 275px;
-    z-index: 15;
+    height: 300px;
+    z-index: 10;
     font-size: 0;
     transition: all .3s ease-in-out;
     position: fixed;
-    right: 15px;
+    right: 10px;
     bottom: 0;
 }
 
@@ -17,10 +17,10 @@
 
 .message {
     opacity: 0;
-    width: 200px;
+    width: 180px;
     height: auto;
     margin: auto;
-    padding: 8px;
+    padding: 7px;
     top: -80px;
     left: 10px;
     text-align: center;
