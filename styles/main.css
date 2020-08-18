@@ -133,7 +133,7 @@
     /*两个center分别为水平和垂直方向的对齐方式*/
     background-size: 100%;
     /*背景水平铺满*/
-    filter: blur(1px);
+    filter: blur(2px);
     /*虚化值，越大越模糊*/
     position: fixed;
   }
