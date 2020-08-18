@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://2020.imon.tk</id>
     <title>Monの小屋</title>
-    <updated>2020-08-18T11:22:02.720Z</updated>
+    <updated>2020-08-18T11:44:32.371Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://2020.imon.tk"/>
     <link rel="self" href="https://2020.imon.tk/atom.xml"/>
@@ -20,8 +20,6 @@
 ]]></summary>
         <content type="html"><![CDATA[<p>你知道10美元纸币上的头像是谁吗？</p>
 <!-- more -->
-<link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/plyr@3.6.2/dist/plyr.css?ver=3.6.2'><script type='text/javascript' src='https://cdn.jsdelivr.net/npm/plyr@3.6.2/dist/plyr.js?ver=3.6.2'></script><script> const player = new Plyr('#player');</script> <link rel='stylesheet' id='dplayer-css'  href='https://cdnjs.cat.net/ajax/libs/dplayer/1.25.0/DPlayer.min.css?ver=1.25.0' type='text/css' media='' />
-<script type='text/javascript' src='https://imon.tk/wp-content/themes/Ysnv-theme/js/bootstrap.min.js?ver=1'></script>
 <blockquote>
 <p>亚历山大·汉密尔顿（Alexander Hamilton，1757年1月11日 – 1804年7月12日）是美国的开国元勋之一，也是美国的第一任财政部长。出生在加勒比海的小岛、在纽约国王学院接受教育，志愿参军，在独立战争中得到华盛顿赏识成为他的副手，在 Yorktown 战役中领兵对抗英军。建国后他主张建立强大的中央政府和中央军队。他左右了前三届总统的选举。他一手创立的金融机制使美国快速地在战后实现经济繁荣。Hamilton 也是美国第一个传出桃色丑闻的公职人员。49岁时与当时的副总统 Aaron Burr 决斗时放弃开枪机会，次日丧生。</p>
 <p>这部音乐剧严格遵照历史，讲述 Hamilton 政治生涯中的几件大事，他的战友和政敌、他与妻子 Eliza 和长子 Philip 的深厚感情以及他犯下的错误。历史人物 George Washington、Thomas Jefferson &amp; James Madison 等在剧中轮流出场。剧中音乐以Hip-hop为主，穿插了Jazz，R&amp;B, Tin Pan Alley 等多种风格的歌曲。</p>
@@ -46,11 +44,40 @@
 <blockquote>
 <blockquote>
 <h3 id="节点1-国内">[节点1 国内]</h3>
-<div class="plyr"><video width="100%" height="100%" poster="https://i.loli.net/2020/08/18/ETotFB2KV3I89fS.jpg" id="player" playsinline controls><source src="https://onedrive.gimhoy.com/1drv/aHR0cHM6Ly8xZHJ2Lm1zL3YvcyFBaHdRc2N6N3lfekZoRjU2TlhvWWRWVnRFMl9VP2U9RUlJdUho.mp4" type="video/mp4"></video></div> 
+</blockquote>
+</blockquote>
+<p><video
+    id="my-video"
+    class="video-js"
+    controls
+    preload="auto"
+    width="500"
+    height="300"
+    poster="https://i.loli.net/2020/08/18/ETotFB2KV3I89fS.jpg"
+    data-setup="{}"
+    ><br>
+<source src="https://onedrive.gimhoy.com/1drv/aHR0cHM6Ly8xZHJ2Lm1zL3YvcyFBaHdRc2N6N3lfekZoRjU2TlhvWWRWVnRFMl9VP2U9RUlJdUho.mp4" type="video/mp4" /><br>
+</video></p>
+  <script src="https://vjs.zencdn.net/7.8.4/video.js"></script>
+<blockquote>
+<blockquote>
 <hr>
 <h3 id="节点2-国外">[节点2 国外]</h3>
-<div class="plyr"><video width="100%" height="100%" poster="https://i.loli.net/2020/08/18/ETotFB2KV3I89fS.jpg" id="player" playsinline controls><source src="https://storage.live.com/items/C5FCCBFBCCB1101C!606:/Hamilton.2020.1080p.WEBRip.x264.AAC5.1-[Monの小屋_imon.tk].mp4?authkey=ACJC3mXdYmx_IwU" type="video/mp4"></video></div>
 </blockquote>
+</blockquote>
+<p><video
+    id="my-video"
+    class="video-js"
+    controls
+    preload="auto"
+    width="500"
+    height="300"
+    poster="https://i.loli.net/2020/08/18/ETotFB2KV3I89fS.jpg"
+    data-setup="{}"
+    ><br>
+<source src="https://storage.live.com/items/C5FCCBFBCCB1101C!606:/Hamilton.2020.1080p.WEBRip.x264.AAC5.1-[Monの小屋_imon.tk].mp4?authkey=ACJC3mXdYmx_IwU" type="video/mp4" /><br>
+</video></p>
+<blockquote>
 <blockquote><p>实在不能在线看的话就下载来看吧qaq</p>
 </blockquote>
 <hr />
