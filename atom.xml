@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://2020.imon.tk</id>
     <title>Monの小屋</title>
-    <updated>2020-08-19T10:48:35.961Z</updated>
+    <updated>2020-08-19T10:52:16.582Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://2020.imon.tk"/>
     <link rel="self" href="https://2020.imon.tk/atom.xml"/>
@@ -11,11 +11,11 @@
     <icon>https://2020.imon.tk/favicon.ico</icon>
     <rights>All rights reserved 2020, Monの小屋</rights>
     <entry>
-        <title type="html"><![CDATA[天文学者 / 理一 feat.鏡音レン - ʕ̢̣̣̣̣̩̩̩̩·͡˔·ོɁ̡̣̣̣̣̩̩̩̩]]></title>
+        <title type="html"><![CDATA[天文学者 / 理一 feat.鏡音レン]]></title>
         <id>https://2020.imon.tk/天文学者/</id>
         <link href="https://2020.imon.tk/天文学者/">
         </link>
-        <updated>2020-08-18T13:37:27.000Z</updated>
+        <updated>2020-08-19T13:37:27.000Z</updated>
         <content type="html"><![CDATA[<h1 id="一起来仰望天空吧~"><strong>一起来仰望天空吧~</strong></h1>
 <blockquote>
 <p><em>我們緊緊捧著參與獎作為證據。</em></p>
