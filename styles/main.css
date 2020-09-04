@@ -1,4 +1,4 @@
-@media screen and (min-width: 1300px) {
+@media screen and (min-width: 1200px) {
   #tab1 {
     position: fixed;
     left: 3%;
@@ -112,12 +112,12 @@
     width: 25%;
     z-index: 1000;
     justify-content: center;
+    display: flex;
   }
   #main {
-    left: 25%;
     justify-content: center;
     text-align: center;
-    width: 60%;
+    z-index: 99;
   }
   #content {
     width: 100%;
@@ -150,7 +150,7 @@
     display: none;
   }
 }
-@media screen and (max-width: 1300px) {
+@media screen and (max-width: 1200px) {
   #landlord {
     display: none;
   }
@@ -211,7 +211,6 @@
   }
 }
 #side {
-  height: 100vh;
   animation: fade-in;
   /*????*/
   animation-duration: 1s;
@@ -219,12 +218,17 @@
   -webkit-animation: fade-in 1s;
   /*??webkit??*/
 }
+.side {
+  min-height: 80%;
+}
 .describtion {
   margin-top: 3%;
   text-align: center;
   font-size: 12px;
   color: white;
   font-weight: lighter;
+  display: flex;
+  justify-content: center;
 }
 .sitename {
   margin-top: 3%;
@@ -233,6 +237,10 @@
   font-weight: 900;
   color: antiquewhite;
   font-family: Arial, Verdana, "宋体";
+}
+.sitetime {
+  display: flex;
+  justify-content: center;
 }
 .avatar {
   width: 90px;
@@ -461,6 +469,9 @@ hr {
   cursor: pointer;
   font-size: 12px;
 }
+.searchtop {
+  width: auto;
+}
 #vistornum {
   margin-top: 1%;
   color: white;
@@ -468,7 +479,7 @@ hr {
 #busuanzi_value_site_uv {
   color: lightgreen;
 }
-@media screen and (max-width: 1300px) {
+@media screen and (max-width: 1200px) {
   .avatar-border {
     position: absolute;
     /* margin-bottom: 10%; */
@@ -512,9 +523,9 @@ hr {
   align-items: center;
   background: #F8F8FF;
   border-radius: 15px;
-  margin-left: 30%;
-  width: 40%;
-  height: 5vh;
+  margin-left: 20%;
+  width: 60%;
+  height: 7vh;
   margin-top: 35vh;
 }
 #socialMenu .socialContainer .icon {
@@ -544,13 +555,12 @@ hr {
   }
 }
 .pagi {
-  display: inline-block;
   padding-left: 0;
   margin: 20px 0;
   border-radius: 4px;
   width: 100%;
-  padding-left: 30%;
-  padding-right: 30%;
+  display: flex;
+  justify-content: center;
 }
 .pagi ul {
   margin: 50px 0 0 0;
@@ -625,6 +635,9 @@ hr {
   padding: 0px 0 80px 0;
   position: relative;
   z-index: 1;
+}
+.postlist {
+  padding: 0px 10px 80px 10px;
 }
 .posttitlebox {
   position: absolute;
@@ -710,7 +723,7 @@ hr {
 a:hover {
   text-decoration: none;
 }
-@media screen and (max-width: 1300px) {
+@media screen and (max-width: 1200px) {
   #post {
     width: 100%;
     display: flex;
@@ -760,6 +773,32 @@ a:hover {
     font-size: 1.2em;
     padding: 0;
     font-weight: bold;
+  }
+}
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  /*初始状态 透明度为0*/
+  40% {
+    opacity: 0;
+  }
+  /*过渡状态 透明度为0*/
+  100% {
+    opacity: 1;
+  }
+  /*结束状态 透明度为1*/
+}
+@-webkit-keyframes fade-in {
+  /*针对webkit内核*/
+  0% {
+    opacity: 0;
+  }
+  40% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
   }
 }
 .toc-container {
@@ -834,20 +873,43 @@ code {
   z-index: 102;
 }
 #comment {
-  margin-top: 350px;
   box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
   /*考虑浏览器兼容性*/
   -moz-box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
   -webkit-box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.5);
   border-radius: 10px;
+  background: white;
+  z-index: 99;
+  padding: 10px;
+}
+.comment {
+  width: 90%;
+  margin-left: 5%;
+}
+@media screen and (max-width: 1200px) {
+  .tog {
+    display: none;
+  }
+  .postinfo-detail {
+    margin-left: 10px;
+  }
+  .toc-container {
+    display: none;
+  }
 }
 pre code {
   font-size: 13px;
   white-space: inherit;
 }
-@media screen and (min-width: 1300px) {
+@media screen and (min-width: 1200px) {
+  #comment {
+    margin-top: 350px;
+  }
   .commentcontainer {
     padding: 30px;
+  }
+  .postinfo-detail {
+    margin-left: 0;
   }
   .copybt {
     position: absolute;
@@ -891,11 +953,7 @@ pre code {
     color: white;
   }
 }
-@media screen and (max-width: 1300px) {
-  .commentcontainer {
-    width: 90%;
-    margin-left: 5%;
-  }
+@media screen and (max-width: 1200px) {
   .copybt {
     position: absolute;
     width: 15%;
@@ -951,6 +1009,43 @@ pre code {
   height: 110;
   border: 0;
   margin: 0;
+}
+table {
+  width: 80%;
+  margin: 30px auto;
+  border: #aaa 2px;
+  border-collapse: separate;
+  border-spacing: 5px;
+}
+td,
+th {
+  padding: 5px;
+  text-align: center;
+  border-color: #ddd;
+  border-width: 1px;
+  border-style: solid;
+}
+tr:nth-child(2n) {
+  background: #F5F5F5;
+}
+@media screen and (min-width: 1200px) {
+  #bar {
+    display: none;
+  }
+  .posttop {
+    margin-top: 50px;
+  }
+}
+#postmain {
+  justify-content: center;
+  padding: 0;
+  z-index: 98;
+  animation: fade-in;
+  /*动画名称*/
+  animation-duration: 1s;
+  /*动画持续时间*/
+  -webkit-animation: fade-in 1s;
+  /*针对webkit内核*/
 }
 @keyframes fade-in {
   0% {
@@ -1009,7 +1104,7 @@ pre code {
   color: #fff;
   font-size: 13px;
 }
-@media screen and (min-width: 1300px) {
+@media screen and (min-width: 1200px) {
   .archives-content ul {
     padding: 1px 100px;
   }
@@ -1073,7 +1168,7 @@ pre code {
   font-weight: lighter;
   color: #ced4da;
 }
-@media screen and (max-width: 1300px) {
+@media screen and (max-width: 1200px) {
   .archives-content ul li > span {
     display: none;
   }
@@ -1118,9 +1213,6 @@ pre code {
   /*��������ʱ��*/
   -webkit-animation: fade-in 1s;
   /*���webkit�ں�*/
-}
-.postinfo-detail {
-  margin-left: 0;
 }
 #articlecontent {
   background: white;
@@ -1172,7 +1264,7 @@ pre code {
   opacity: 0.7;
   font-weight: lighter;
 }
-@media screen and (min-width: 1300px) {
+@media screen and (min-width: 1200px) {
   .prev-post,
   .next-post {
     display: none;
@@ -1196,7 +1288,7 @@ pre code {
     margin-top: 100px;
   }
 }
-@media screen and (max-width: 1300px) {
+@media screen and (max-width: 1200px) {
   .prev-post,
   .next-post {
     margin-top: 25px;
@@ -1330,7 +1422,7 @@ pre code {
 .post-copyright li {
   padding: 5px;
 }
-@media screen and (max-width: 1380px) {
+@media screen and (max-width: 1200px) {
   #live2d-widget {
     display: none;
   }
@@ -1380,9 +1472,14 @@ pre code {
     opacity: 1;
   }
 }
-@media screen and (max-width: 1300px) {
+#friendscontainer {
+  position: relative;
+  z-index: 999;
+}
+@media screen and (max-width: 1200px) {
   #friendscontainermobile {
-    position: flex;
+    margin-top: 60px;
+    position: relative;
     min-height: 70vh;
     display: block;
     animation: fade-in;
@@ -1391,6 +1488,9 @@ pre code {
     /*动画持续时间*/
     -webkit-animation: fade-in 1s;
     /*针对webkit内核*/
+  }
+  .fricontent {
+    width: 90%;
   }
   #friendscontainer {
     display: none;
@@ -1403,7 +1503,6 @@ pre code {
     overflow: hidden;
   }
   .friend-box {
-    float: left;
     border-radius: 10px;
     cursor: pointer;
     background: black;
@@ -1427,7 +1526,7 @@ pre code {
     text-decoration: none;
   }
 }
-@media screen and (min-width: 1300px) {
+@media screen and (min-width: 1200px) {
   #friendscontainermobile {
     display: none;
   }
@@ -1488,13 +1587,31 @@ pre code {
     overflow: hidden;
     text-align: center;
   }
+  .fcl {
+    width: 80%;
+    margin-left: 5%;
+  }
+  .fct {
+    width: 70%;
+    margin-left: 5%;
+  }
 }
-@media screen and (max-width: 1300px) {
+@media screen and (max-width: 1200px) {
   .archives-content ul li > span {
     display: none;
   }
   .archives-content ul {
     padding: 0px;
+  }
+  .fcl,
+  .fct {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 750px) {
+  .fcl,
+  .fct {
+    margin-left: 5%;
   }
 }
 body {
@@ -1640,7 +1757,7 @@ body {
 #getmorebt:focus {
   outline: 0;
 }
-@media screen and (min-width: 1300px) {
+@media screen and (min-width: 1200px) {
   .talkShow {
     display: block;
     position: absolute;
@@ -1658,12 +1775,12 @@ body {
     width: 100px;
   }
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 768px) and (min-width: 475px) {
   .talk .talkimg {
     width: 150px;
   }
 }
-@media screen and (max-width: 1300px) {
+@media screen and (max-width: 1200px) {
   .side {
     display: none;
   }
@@ -1680,20 +1797,15 @@ body {
 .top {
   margin-top: 70px;
 }
-@media screen and (max-width: 1300px) {
-  #main {
-    padding: 5%;
-    width: 90%;
-    margin: 0;
-  }
+@media screen and (max-width: 1200px) {
   #talkContainer .talk .talkcontent {
     font-size: 15px;
   }
+  .talkShow {
+    width: 90%;
+  }
 }
 @media screen and (max-width: 425px) {
-  #main {
-    margin-left: 10px;
-  }
   #talkContainer .talk .talkcontent {
     width: 55%;
   }
@@ -1828,7 +1940,7 @@ a {
   position: fixed;
   min-height: 100vh;
   background: whitesmoke;
-  width: 60%;
+  width: 58.33%;
   opacity: 0.6;
 }
 .tagsbackgroundtop {
@@ -1861,7 +1973,7 @@ a {
 .tagsimg {
   width: 100%;
 }
-@media screen and (max-width: 1300px) {
+@media screen and (max-width: 1200px) {
   .tag {
     width: 40%;
   }
@@ -1878,7 +1990,7 @@ a {
   -webkit-animation: fade-in 1s;
   /*���webkit�ں�*/
 }
-@media screen and (max-width: 1300px) {
+@media screen and (max-width: 1200px) {
   .tag-container {
     margin-top: 100px;
     animation: fade-in;
@@ -1927,7 +2039,7 @@ a {
   -webkit-animation: fade-in 1s;
   /*���webkit�ں�*/
 }
-@media screen and (max-width: 1300px) {
+@media screen and (max-width: 1200px) {
   .tag-container {
     margin-top: 100px;
     animation: fade-in;
@@ -1950,7 +2062,7 @@ a {
   transition: all 0.3s ease;
   max-width: 400px;
 }
-@media screen and (max-width: 1300px) {
+@media screen and (max-width: 1200px) {
   .miniMode {
     display: none;
   }

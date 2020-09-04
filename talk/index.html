@@ -1,70 +1,18 @@
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js"></script>
     <!-- 最新版本的 Bootstrap 核心 CSS 文件 -->
     <link rel="stylesheet" href="https://imon.eu.org/media/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://imon.eu.org/media/css/live2d.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/850552586/ericamcdn@0.1/css/live2d.css">
     <meta name="description" content="全新启航" />
     <link rel="stylesheet" href="https://imon.eu.org/styles/main.css">
+    <link rel="stylesheet" href="https://imon.eu.org/media/css/font-awesome.css">
     <title>Monの小屋</title>
-	
-	<meta name="keywords" content="٩( ᐛ )وMONの小屋,MON,我是MON,imon.tk,MONの小屋,MON的小屋,54mon,Len_jun,ACG,技术,二次元,٩( ᐛ )و,小屋,博客,blog" />
-<meta name="description" content="这里是MONの小屋，欢迎做客٩( ᐛ )و" />
-
-		<!-- 百度的统计代码 -->
-	<script>
-var _hmt = _hmt || [];
-(function() {
-  var hm = document.createElement("script");
-  hm.src = "https://hm.baidu.com/hm.js?cf2ad89bfc86b223a831cfae7db9aa7e";
-  var s = document.getElementsByTagName("script")[0]; 
-  s.parentNode.insertBefore(hm, s);
-})();
-</script>
-
-<!-- 谷歌Analytics -->
-<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-N9F6R5GLG5"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-N9F6R5GLG5');
-</script>
-<!-- 视频播放器 -->
-<link href="https://vjs.zencdn.net/7.8.4/video-js.css" rel="stylesheet" />
-
-  <!-- If you'd like to support IE8 (for Video.js versions prior to v7) -->
-  <script src="https://vjs.zencdn.net/ie8/1.1.2/videojs-ie8.min.js"></script>
 </head>
 
 <body>
-<!-- The core Firebase JS SDK is always required and must be listed first -->
-<script src="https://www.gstatic.com/firebasejs/7.18.0/firebase-app.js"></script>
-
-<!-- TODO: Add SDKs for Firebase products that you want to use
-     https://firebase.google.com/docs/web/setup#available-libraries -->
-<script src="https://www.gstatic.com/firebasejs/7.18.0/firebase-analytics.js"></script>
-
-<script>
-  // Your web app's Firebase configuration
-  var firebaseConfig = {
-    apiKey: "AIzaSyBJ5N8zMQHCvEsyZkgxwSaecdf-yu7TuSg",
-    authDomain: "mon-s-house.firebaseapp.com",
-    databaseURL: "https://mon-s-house.firebaseio.com",
-    projectId: "mon-s-house",
-    storageBucket: "mon-s-house.appspot.com",
-    messagingSenderId: "178180502199",
-    appId: "1:178180502199:web:b37f98aaff5eb29e659332",
-    measurementId: "G-Y3F14J5E8G"
-  };
-  // Initialize Firebase
-  firebase.initializeApp(firebaseConfig);
-  firebase.analytics();
-</script>
     <!-- 响应式布局，针对PC端内容显示 -->
     <div id="content">
         <div class="talkShow">
@@ -73,7 +21,7 @@ var _hmt = _hmt || [];
     
     <div id=side>
         <div class="avatar-border">
-            <img src="https://imon.eu.org/images/avatar.png?v=1598433161241" class="avatar">
+            <img src="https://imon.eu.org/images/avatar.png?v=1599214741262" class="avatar">
         </div>
         <div class="sitename">Monの小屋</div>
         <span class="describtion" data-text='["全新启航"]'>&nbsp;</span>
@@ -166,11 +114,11 @@ window.player=new MusicPlayer({
 <span style="color: #999999;"><strong>正在播放&nbsp;&nbsp;[天文学者]&nbsp;&nbsp;&nbsp;&nbsp;Music / 植川理一
 Vocal / 鏡音レン (Edited by Izumi)</strong></span>&nbsp;
 <a href="https://imon.eu.org/%e5%a4%a9%e6%96%87%e5%ad%a6%e8%80%85/">点我查看歌词~</a>
-
-	</div>
+ | Theme: <a
+        href="https://github.com/850552586/gridea-theme-fog">Fog</a></div>
     
-    <div id="sitegotimeDate">载入天数...</div>
-    <div id="sitegotimes">载入时分秒...</div>
+    <div class="sitetime"><div id="sitegotimeDate">载入天数...</div>
+    <div id="sitegotimes">载入时分秒...</div></div>
     <div id="cussitetime" style="display:none">12/22/2018</div>
     
     
@@ -349,22 +297,39 @@ Vocal / 鏡音レン (Edited by Izumi)</strong></span>&nbsp;
 </div>
                 <div class="tbar"> <head>
   <!-- 引入Bootstrap核心样式文件 -->
-  <link rel="stylesheet" href="https://imon.eu.org/media/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/850552586/ericamcdn@0.1/css/bootstrap.min.css">
 </head>
+<style>
+  @media screen and (max-width:1200px) and (min-width: 768px) {
+    @media (min-width: 768px) {
+      .navbar-nav {
+        float: right;
+        margin: 0;
+      }
+    }
+  }
+  @media screen and (max-width:768px){
+    .mbapspan{
+      padding: 0;
+    }
+  }
+</style>
 
 <body>
   <nav class="navbar navbar-inverse navbar-fixed-top">
     <div class="container-fluid">
       <!-- Brand and toggle get grouped for better mobile display -->
       <div class="navbar-header">
-        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
-          data-target="#barmenu" aria-expanded="false" id="barbutton">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#barmenu"
+          aria-expanded="false" id="barbutton">
           <span class="sr-only">Toggle navigation</span>
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </button>
         <a class="navbar-brand" href="https://imon.eu.org">Monの小屋&nbsp;&nbsp;|</a>
+        <span class="navbar-brand mbapspan"><i id="mbaplayer" class="fa fa-play-circle-o" aria-hidden="true"
+            style="font-size: 28px;top: 12px;position: absolute;" onclick="aplayerPlay();"></i></span>
       </div>
 
       <!-- Collect the nav links, forms, and other content for toggling -->
@@ -415,7 +380,7 @@ Vocal / 鏡音レン (Edited by Izumi)</strong></span>&nbsp;
 
 
   <!-- 引入jQuery核心js文件 -->
-  <script src="http://cdn.static.runoob.com/libs/jquery/2.1.1/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js"></script>
   <script>
   var btstate = false;
   var bt = $("#barbutton");
@@ -447,7 +412,8 @@ Vocal / 鏡音レン (Edited by Izumi)</strong></span>&nbsp;
                     <div style="margin-top:60px"></div>
                 </div>
                 
-                <div id="main" class="col-xs-12 col-sm-7" style="z-index: 999;">
+                <div class="col-md-1 col-lg-3"></div>
+                <div id="main" class="col-xs-12 col-sm-12 col-md-10 col-lg-8" style="z-index: 999;">
                     <body>
     <div id="talks">
         <div id="talkContainer">
@@ -462,8 +428,8 @@ Vocal / 鏡音レン (Edited by Izumi)</strong></span>&nbsp;
 </body>
 
                 </div>
+                <div class="col-md-1 col-lg-1"></div>
                 
-                <div class="col-xs-6 col-sm-2"></div>
             </div>
             
         </div>
@@ -488,7 +454,7 @@ Vocal / 鏡音レン (Edited by Izumi)</strong></span>&nbsp;
                 var message_Path = '/live2d/'
                 var home_Path = document.getElementById("domainname").innerHTML+"/"; //此处修改为你的域名，必须带斜杠
             </script>
-            <script type="text/javascript" src="https://imon.eu.org/media/live2d/js/live2d.js"></script>
+            <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/850552586/ericamcdn@0.1/js/live2d.js"></script>
             <script type="text/javascript" src="https://imon.eu.org/media/live2d/js/message.js"></script>
             <script type="text/javascript">
                 loadlive2d("live2d", "https://imon.eu.org/media/live2d/assets/tororo.model.json");
@@ -549,7 +515,7 @@ Vocal / 鏡音レン (Edited by Izumi)</strong></span>&nbsp;
                 <img src="' + talks[i].img + '" class="talkimg"> \
                 <div class="ainfo">\
                     <div class="ainfo-intro">\
-                        <img class="intro1" src="https://imon.eu.org/images/avatar.png?v=1598433161241">\
+                        <img class="intro1" src="https://imon.eu.org/images/avatar.png?v=1599214741262">\
                         <div class="author">' + talks[i].author + '</div>·\
                         <div class="time">' + talks[i].time + '</div>\
                     </div>\
@@ -562,7 +528,7 @@ Vocal / 鏡音レン (Edited by Izumi)</strong></span>&nbsp;
             <div class="talk" v-for="t in talks"> \
                 <div class="ainfo">\
                     <div class="ainfo-intro">\
-                        <img class="intro1" src="https://imon.eu.org/images/avatar.png?v=1598433161241">\
+                        <img class="intro1" src="https://imon.eu.org/images/avatar.png?v=1599214741262">\
                         <div class="author">' + talks[i].author + '</div>·\
                         <div class="time">' + talks[i].time + '</div>\
                     </div>\
@@ -600,5 +566,9 @@ Vocal / 鏡音レン (Edited by Izumi)</strong></span>&nbsp;
                 social.style.display = "none";
             }
         }
+    }
+
+    window.onload = function(){
+        aplayerbtnInit();
     }
 </script>

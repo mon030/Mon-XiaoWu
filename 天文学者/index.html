@@ -1,4 +1,44 @@
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=0">
+    <meta name="description" content="一起来仰望天空吧~
+
+我們緊緊捧著參與獎作為證據。
+
+天文学者-PV(bilibili)
+天文学者(网易云)
+
+作曲 : 植川理一 作词 : 植川理一 Vocal / 鏡音レン (Edited by Izumi)
+僕らの生活は正常で
+我们的..." />
+    <meta name="keywords" content="Music,镜音连,bilibili" />
+    <link rel="stylesheet" href="https://imon.eu.org/media/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://imon.eu.org/styles/main.css">
+    
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.18.1/build/styles/rainbow.min.css">
+    
+    <script src="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.18.1/build/highlight.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/850552586/ericamcdn@0.1/js/clipboard.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/850552586/ericamcdn@0.1/css/live2d.css">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js"></script>
+    <!-- 最新版本的 Bootstrap 核心 CSS 文件 -->
+    <link href="https://cdn.bootcdn.net/ajax/libs/font-awesome/5.13.1/css/all.min.css" rel="stylesheet">
+    <!-- 数学公式 -->
+    
+    <title>Monの小屋</title>
+    
+    <style>
+        .markdownIt-TOC {
+            margin-left: 28%;
+            padding-left: 2px;
+            width: 80%;
+        }
+
+        .markdownIt-TOC li {
+            padding-left: 8%;
+        }
+    </style>
+    
 	<!-- 百度的统计代码 -->
 	<script>
 var _hmt = _hmt || [];
@@ -27,73 +67,16 @@ var _hmt = _hmt || [];
 
   <!-- If you'd like to support IE8 (for Video.js versions prior to v7) -->
   <script src="https://vjs.zencdn.net/ie8/1.1.2/videojs-ie8.min.js"></script>
-
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="一起来仰望天空吧~
-
-我們緊緊捧著參與獎作為證據。
-
-天文学者-PV(bilibili)
-天文学者(网易云)
-
-作曲 : 植川理一 作词 : 植川理一 Vocal / 鏡音レン (Edited by Izumi)
-僕らの生活は正常で
-我们的..." />
-    <meta name="keywords" content="Music,镜音连,bilibili" />
-    <link rel="stylesheet" href="https://imon.eu.org/media/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://imon.eu.org/styles/main.css">
-    
-    <link rel="stylesheet" href="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.18.1/build/styles/rainbow.min.css">
-    
-    <script src="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.18.1/build/highlight.min.js"></script>
-    <script src="https://imon.eu.org/media/js/clipboard.min.js"></script>
-    <link rel="stylesheet" href="https://imon.eu.org/media/css/live2d.css">
-    <script src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js"></script>
-    <!-- 最新版本的 Bootstrap 核心 CSS 文件 -->
-    <link href="https://cdn.bootcdn.net/ajax/libs/font-awesome/5.13.1/css/all.min.css" rel="stylesheet">
-    <!-- 数学公式 -->
-    
-    <title>Monの小屋</title>
-    
-    <style>
-        .markdownIt-TOC {
-            margin-left: 28%;
-            padding-left: 2px;
-            width: 80%;
-        }
-
-        .markdownIt-TOC li {
-            padding-left: 8%;
-        }
-    </style>
-    
+  <!-- 360页面自动收录 -->
+  <script>
+(function(){
+var src = "https://jspassport.ssl.qhimg.com/11.0.1.js?d182b3f28525f2db83acfaaf6e696dba";
+document.write('<script src="' + src + '" id="sozz"><\/script>');
+})();
+</script>
 </head>
 
 <body>
-<!-- The core Firebase JS SDK is always required and must be listed first -->
-<script src="https://www.gstatic.com/firebasejs/7.18.0/firebase-app.js"></script>
-
-<!-- TODO: Add SDKs for Firebase products that you want to use
-     https://firebase.google.com/docs/web/setup#available-libraries -->
-<script src="https://www.gstatic.com/firebasejs/7.18.0/firebase-analytics.js"></script>
-
-<script>
-  // Your web app's Firebase configuration
-  var firebaseConfig = {
-    apiKey: "AIzaSyBJ5N8zMQHCvEsyZkgxwSaecdf-yu7TuSg",
-    authDomain: "mon-s-house.firebaseapp.com",
-    databaseURL: "https://mon-s-house.firebaseio.com",
-    projectId: "mon-s-house",
-    storageBucket: "mon-s-house.appspot.com",
-    messagingSenderId: "178180502199",
-    appId: "1:178180502199:web:b37f98aaff5eb29e659332",
-    measurementId: "G-Y3F14J5E8G"
-  };
-  // Initialize Firebase
-  firebase.initializeApp(firebaseConfig);
-  firebase.analytics();
-</script>
     <div id="landlord">
         <div class="message" style="opacity:0"></div>
         <canvas id="live2d" width="240" height="286" class="live2d"></canvas>
@@ -102,13 +85,129 @@ var _hmt = _hmt || [];
     <div id="domainname" style="display:none">https://imon.eu.org</div>
     <!-- 响应式布局，针对PC端内容显示 -->
     <div id="content">
-        <div class="nav-large">
+        <div>
+            <div id="bar">
+                <head>
+  <!-- 引入Bootstrap核心样式文件 -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/850552586/ericamcdn@0.1/css/bootstrap.min.css">
+</head>
+<style>
+  @media screen and (max-width:1200px) and (min-width: 768px) {
+    @media (min-width: 768px) {
+      .navbar-nav {
+        float: right;
+        margin: 0;
+      }
+    }
+  }
+  @media screen and (max-width:768px){
+    .mbapspan{
+      padding: 0;
+    }
+  }
+</style>
+
+<body>
+  <nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container-fluid">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#barmenu"
+          aria-expanded="false" id="barbutton">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="https://imon.eu.org">Monの小屋&nbsp;&nbsp;|</a>
+        <span class="navbar-brand mbapspan"><i id="mbaplayer" class="fa fa-play-circle-o" aria-hidden="true"
+            style="font-size: 28px;top: 12px;position: absolute;" onclick="aplayerPlay();"></i></span>
+      </div>
+
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse" id="barmenu">
+        <ul class="nav navbar-nav">
+          
+          
+          <li>
+            <a href="/">
+              首页
+            </a>
+          </li>
+          
+          
+          
+          <li>
+            <a href="/archives">
+              归档
+            </a>
+          </li>
+          
+          
+          
+          <li>
+            <a href="/tags">
+              标签
+            </a>
+          </li>
+          
+          
+          
+          <li>
+            <a href="https://imon.eu.org/about">
+              关于
+            </a>
+          </li>
+          
+          
+          
+          
+          <li><a href="https://imon.eu.org/friends">友链</a></li>
+
+          
+        </ul>
+      </div><!-- /.navbar-collapse -->
+    </div><!-- /.container-fluid -->
+  </nav>
+
+
+  <!-- 引入jQuery核心js文件 -->
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js"></script>
+  <script>
+  var btstate = false;
+  var bt = $("#barbutton");
+  var bm = $("#barmenu");
+  bt.click(function(){
+    dropdown();
+  })
+  function dropdown(){
+    console.log(btstate);
+    //下拉
+    if(btstate==false){
+      bt.removeClass("collapsed");
+      bt.attr("aria-expanded","true");
+      bm.attr("aria-expanded","true")
+      bm.fadeIn(700);
+      btstate = true;
+    }
+    else{
+      bt.addClass("collapsed");
+      bt.attr("aria-expanded","false");
+      bm.removeClass("in");
+      bm.hide();
+      bm.attr("aria-expanded","false");
+      btstate = false;
+    }
+  }
+  </script> 
+</body>
+            </div>
             <div class="row">
                 <div class="side"><body>
     
     <div id=side>
         <div class="avatar-border">
-            <img src="https://imon.eu.org/images/avatar.png?v=1598433161241" class="avatar">
+            <img src="https://imon.eu.org/images/avatar.png?v=1599214741262" class="avatar">
         </div>
         <div class="sitename">Monの小屋</div>
         <span class="describtion" data-text='["全新启航"]'>&nbsp;</span>
@@ -201,11 +300,11 @@ window.player=new MusicPlayer({
 <span style="color: #999999;"><strong>正在播放&nbsp;&nbsp;[天文学者]&nbsp;&nbsp;&nbsp;&nbsp;Music / 植川理一
 Vocal / 鏡音レン (Edited by Izumi)</strong></span>&nbsp;
 <a href="https://imon.eu.org/%e5%a4%a9%e6%96%87%e5%ad%a6%e8%80%85/">点我查看歌词~</a>
-
-	</div>
+ | Theme: <a
+        href="https://github.com/850552586/gridea-theme-fog">Fog</a></div>
     
-    <div id="sitegotimeDate">载入天数...</div>
-    <div id="sitegotimes">载入时分秒...</div>
+    <div class="sitetime"><div id="sitegotimeDate">载入天数...</div>
+    <div id="sitegotimes">载入时分秒...</div></div>
     <div id="cussitetime" style="display:none">12/22/2018</div>
     
     
@@ -391,7 +490,8 @@ Vocal / 鏡音レン (Edited by Izumi)</strong></span>&nbsp;
                     </div>
                     <div class="close"></div>
                 </div>
-                <div id="main" class="col-xs-12 col-sm-7">
+                <div class="col-md-1 col-lg-3"></div>
+                <div id="main" class="col-xs-12 col-sm-12 col-md-10 col-lg-7">
                     <link rel="stylesheet" href="https://imon.eu.org/media/css/font-awesome.css">
 
 <body>
@@ -427,10 +527,9 @@ Vocal / 鏡音レン (Edited by Izumi)</strong></span>&nbsp;
                 <!-- id 将作为查询条件 -->
                 <div id="pl" style="display:none">https://imon.eu.org/天文学者/</div>
                 <div id="rootaddr" style="display:none">https://imon.eu.org</div>
-                <span id="hotnum" class="leancloud_visitors" data-flag-title="天文学者 / 理一 feat.鏡音レン">
-                    <h4 class="readercount"><i class="fa fa-eye" aria-hidden="true"
-                            style="color: #FF8C00;"></i>&nbsp;&nbsp;热度</i>: <i
-                            class="leancloud-visitors-count">loading...</i></h4>
+                <span id="hotnum">
+                    <h4><i class="fa fa-eye" aria-hidden="true" style="color: #FF8C00;"></i>&nbsp;&nbsp;热度</i>: <i
+                            class="hotnum">loading...</i></h4>
                 </span>
             </div>
             <div class="text ">
@@ -547,9 +646,9 @@ Vocal / 鏡音レン (Edited by Izumi)</strong></span>&nbsp;
                                 src="https://imon.eu.org/media/images/weibo.png" alt=""></i></a>
                     <a class="qzone" href=""><i><img class="shareicon"
                                 src="https://imon.eu.org/media/images/qzone.png" alt=""></i></a>
-                                <a class="douban" href=""><i><img class="shareicon"
-                                    src="https://imon.eu.org/media/images/douban.png" alt=""></i></a>
-                                <a class="facebook" href=""><i><img class="shareicon"
+                    <a class="douban" href=""><i><img class="shareicon"
+                                src="https://imon.eu.org/media/images/douban.png" alt=""></i></a>
+                    <a class="facebook" href=""><i><img class="shareicon"
                                 src="https://imon.eu.org/media/images/facebook.png" alt=""></i></a>
                     <a class="twitter" href=""><i><img class="shareicon"
                                 src="https://imon.eu.org/media/images/twitter.png" alt=""></i></a>
@@ -577,7 +676,9 @@ Vocal / 鏡音レン (Edited by Izumi)</strong></span>&nbsp;
             
             <div class="next-post-pc">
                 <div id="npcontainer" onclick="window.location.href= 'https://imon.eu.org/hamilton/';return false">
+                    
                     <img src="https://i.loli.net/2020/08/18/ETotFB2KV3I89fS.jpg" style="width: 100%;" class="opimg">
+                    
                     <h4 class="optitle">【音乐剧】汉密尔顿-Hamilton-在线观看</h4>
                 </div>
             </div>
@@ -588,6 +689,8 @@ Vocal / 鏡音レン (Edited by Izumi)</strong></span>&nbsp;
         </div>
     </div>
     </div>
+    </div>
+
 </body>
 <script>
     //文章阅读热度
@@ -596,11 +699,12 @@ Vocal / 鏡音レン (Edited by Izumi)</strong></span>&nbsp;
     pl = pl.replace(rootaddr, "");
     $("#hotnum").attr('id', pl);
 </script>
-                </div>
-                <div id="comment" style="background: white">
+                <div id="comment"  class="comment" style="background: white">
                     <div class="commentcontainer">
                         
                         <style>
+
+
     @media screen and (min-width: 1300px) {
         .veditor::placeholder {
             color: #b3b3b3;
@@ -615,8 +719,9 @@ Vocal / 鏡音レン (Edited by Izumi)</strong></span>&nbsp;
 <body>
     <div id="vcomments">
     </div>
-    <script src='https://imon.eu.org/media/js/valine.min.js'></script>
-    <script src="https://imon.eu.org/media/js/jquery.min.js"></script>
+    <script src="https://imon.eu.org/media/js/valine.min.js"></script>
+    <!-- <script src="https://unpkg.com/valine/dist/Valine.min.js"></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js"></script>
     <script src="https://sdk.jinrishici.com/v2/browser/jinrishici.js" charset="utf-8"></script>
     <script>
         new Valine({
@@ -645,13 +750,19 @@ Vocal / 鏡音レン (Edited by Izumi)</strong></span>&nbsp;
                  .dynasty + " · " + result.data.origin.author;
             });
     </script> 
+    
 </body>
                         <div class="clear"></div>
                         
                     </div>
                 </div>
+                </div>
+                <div class="col-md-1 col-lg-2"></div>
+                <div id="bg">
+                </div>
             </div>
             
+        
         <div class="toc-container">
             <ul class="markdownIt-TOC">
 <li><a href="#%E4%B8%80%E8%B5%B7%E6%9D%A5%E4%BB%B0%E6%9C%9B%E5%A4%A9%E7%A9%BA%E5%90%A7~"><strong>一起来仰望天空吧~</strong></a><br>
@@ -662,354 +773,20 @@ Vocal / 鏡音レン (Edited by Izumi)</strong></span>&nbsp;
 * <a href="#%E6%9C%89%E6%97%B6%E9%97%B4%E7%9A%84%E8%AF%9D%E8%AF%95%E4%B8%80%E4%B8%8B%E7%BF%BB%E5%94%B1"><em>有时间的话试一下翻唱?</em></a></li>
 </ul>
 
+    </div>
+    </div>
+    </div>
+    <div class="tog">
+        <div class="toggleContainer">
+            <div class="toggle">
+                <i class="fas fa-angle-double-up"></i>
+            </div>
         </div>
-    </div>
-    </div>
-    <div class="toggleContainer">
-        <div class="toggle">
-            <i class="fas fa-angle-double-up"></i>
-        </div>
-    </div>
-    <div id="bg">
     </div>
     <div id="bgchoice" style="display: none">link</div>
     
     <div id="bgurl" style="display:none">https://api.dujin.org/pic/?btwaf=21029199</div>
     
-    </div>
-    <!-- 响应式布局，针对手机端内容显示 -->
-    <div class="nav-small">
-        <head>
-  <!-- 引入Bootstrap核心样式文件 -->
-  <link rel="stylesheet" href="https://imon.eu.org/media/css/bootstrap.min.css">
-</head>
-
-<body>
-  <nav class="navbar navbar-inverse navbar-fixed-top">
-    <div class="container-fluid">
-      <!-- Brand and toggle get grouped for better mobile display -->
-      <div class="navbar-header">
-        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
-          data-target="#barmenu" aria-expanded="false" id="barbutton">
-          <span class="sr-only">Toggle navigation</span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-        </button>
-        <a class="navbar-brand" href="https://imon.eu.org">Monの小屋&nbsp;&nbsp;|</a>
-      </div>
-
-      <!-- Collect the nav links, forms, and other content for toggling -->
-      <div class="collapse navbar-collapse" id="barmenu">
-        <ul class="nav navbar-nav">
-          
-          
-          <li>
-            <a href="/">
-              首页
-            </a>
-          </li>
-          
-          
-          
-          <li>
-            <a href="/archives">
-              归档
-            </a>
-          </li>
-          
-          
-          
-          <li>
-            <a href="/tags">
-              标签
-            </a>
-          </li>
-          
-          
-          
-          <li>
-            <a href="https://imon.eu.org/about">
-              关于
-            </a>
-          </li>
-          
-          
-          
-          
-          <li><a href="https://imon.eu.org/friends">友链</a></li>
-
-          
-        </ul>
-      </div><!-- /.navbar-collapse -->
-    </div><!-- /.container-fluid -->
-  </nav>
-
-
-  <!-- 引入jQuery核心js文件 -->
-  <script src="http://cdn.static.runoob.com/libs/jquery/2.1.1/jquery.min.js"></script>
-  <script>
-  var btstate = false;
-  var bt = $("#barbutton");
-  var bm = $("#barmenu");
-  bt.click(function(){
-    dropdown();
-  })
-  function dropdown(){
-    console.log(btstate);
-    //下拉
-    if(btstate==false){
-      bt.removeClass("collapsed");
-      bt.attr("aria-expanded","true");
-      bm.attr("aria-expanded","true")
-      bm.fadeIn(700);
-      btstate = true;
-    }
-    else{
-      bt.addClass("collapsed");
-      bt.attr("aria-expanded","false");
-      bm.removeClass("in");
-      bm.hide();
-      bm.attr("aria-expanded","false");
-      btstate = false;
-    }
-  }
-  </script> 
-</body>
-        <div style="margin-top:30px"></div>
-        <link rel="stylesheet" href="https://imon.eu.org/media/css/font-awesome.css">
-
-<body>
-    <div class="allcontent" id="postdetail">
-        <div class="postshow" style="padding-bottom: 0;">
-            
-            <div class="postdetailimg" style="width:100%;overflow: hidden;">
-                <img src="https://i.loli.net/2020/08/18/EcoiG194IRN7Wuw.jpg" class="postimage" style="cursor:auto">
-            </div>
-            <div class="postinfo-detail">
-                <div class="postdate"><i class="fa fa-calendar"></i>2020-08-19</div>
-                <div class="poststatus postdate"><i class="fa fa-clock-o"></i> 3 min read</div>
-                <div class="posttag">
-                    
-                    <a href="https://imon.eu.org/NXv-5igb7/" class="postlink">
-                        <i class="fa fa-tag"></i> Music
-                    </a>
-                    
-                    <a href="https://imon.eu.org/guMuMFdvz_/" class="postlink">
-                        <i class="fa fa-tag"></i> 镜音连
-                    </a>
-                    
-                    <a href="https://imon.eu.org/txVKSg-0d/" class="postlink">
-                        <i class="fa fa-tag"></i> bilibili
-                    </a>
-                    
-                </div>
-            </div>
-            
-        <div id="articlecontent">
-            <div id="texttitle" style="text-align: center">
-                <h2>天文学者 / 理一 feat.鏡音レン</h2>
-                <!-- id 将作为查询条件 -->
-                <div id="pl" style="display:none">https://imon.eu.org/天文学者/</div>
-                <div id="rootaddr" style="display:none">https://imon.eu.org</div>
-                <span id="hotnum" class="leancloud_visitors" data-flag-title="天文学者 / 理一 feat.鏡音レン">
-                    <h4 class="readercount"><i class="fa fa-eye" aria-hidden="true"
-                            style="color: #FF8C00;"></i>&nbsp;&nbsp;热度</i>: <i
-                            class="leancloud-visitors-count">loading...</i></h4>
-                </span>
-            </div>
-            <div class="text ">
-                <h1 id="一起来仰望天空吧~"><strong>一起来仰望天空吧~</strong></h1>
-<blockquote>
-<p><em>我們緊緊捧著參與獎作為證據。</em></p>
-</blockquote>
-<p><a href="https://acg.tv/av85420440">天文学者-PV(bilibili)</a></p>
-<p><a href="https://music.163.com/#/song?id=1421688572">天文学者(网易云)</a></p>
-<hr>
-<h4 id="作曲-植川理一-作词-植川理一-vocal-鏡音レン-edited-by-izumi">作曲 : 植川理一 作词 : 植川理一 Vocal / 鏡音レン (Edited by Izumi)</h4>
-<h4>僕らの生活は正常で<br />
-<span style="font-size: 10pt;">我们的生活看似正常</span><br />
-実によくある風の粗悪品<br />
-<span style="font-size: 10pt;">其实是样子十分常见的劣质品</span><br />
-どこの誰から見ても平凡で<br />
-<span style="font-size: 10pt;">这任谁看来都平庸无比的人生</span><br />
-それがこんなに痛いのに<br />
-<span style="font-size: 10pt;">却叫我如此难过</span></h4>
-<div id="flag_more" class="">
-<h4>朝目を覚ます理由がない<br />
-<span style="font-size: 10pt;">在早晨醒来的理由一件也没有</span><br />
-頑張っても誉められる訳じゃない<br />
-<span style="font-size: 10pt;">即使努力过也不会得到赞扬</span><br />
-どうせ　すごい人とは張り合えない<br />
-<span style="font-size: 10pt;">反正怎么也无法和那些优秀的人竞争</span><br />
-興昧ないからもう終わりでいいよ<br />
-<span style="font-size: 10pt;">一切索然无味 就此结束也罢</span></h4>
-<h4>止まつてくれない心臓に<br />
-<span style="font-size: 10pt;">已经不知对不肯停止跳动的心脏</span><br />
-何度「死ね」と願ったんだろう<br />
-<span style="font-size: 10pt;">说过多少次“去死”了</span><br />
-亡霊みたいな昼の月が<br />
-<span style="font-size: 10pt;">那亡灵般的白昼之月</span><br />
-生まれた理由を全部知ってる<br />
-<span style="font-size: 10pt;">知道所有出生的理由</span></h4>
-<h4>変われないまま　変わってしまう<br />
-<span style="font-size: 10pt;">无法改变 却还是变了</span><br />
-うまく歩けないや<br />
-<span style="font-size: 10pt;">真是举步维艰啊</span><br />
-あの日見上げてた<br />
-<span style="font-size: 10pt;">感觉那时仰望过的星空</span><br />
-星空に笑われた気がした<br />
-<span style="font-size: 10pt;">也笑话我了</span></h4>
-<h4>奪い取っても　隠し持っても<br />
-<span style="font-size: 10pt;">即使去抢夺 去隐藏</span><br />
-全然足りないんだ<br />
-<span style="font-size: 10pt;">也还是远远不够</span><br />
-僕らは「愛されてる」と思えたらそれでいいのに<br />
-<span style="font-size: 10pt;">明明我们只要能感觉自己被爱 便已足够</span><br />
-午前六時　物語は次のページへ<br />
-<span style="font-size: 10pt;">凌晨六点 故事翻向下一页</span></h4>
-<h4>愛されたいし　誉めてほしいし<br />
-<span style="font-size: 10pt;">想被爱 想被表扬</span><br />
-面倒くさいことはしたくないし<br />
-<span style="font-size: 10pt;">不想做那些麻烦事</span><br />
-やる気出ないし　才能無いし<br />
-<span style="font-size: 10pt;">没有干劲 更没有才能</span><br />
-嫌いな人には死んで欲しい<br />
-<span style="font-size: 10pt;">希望讨厌的人能去死</span></h4>
-<h4>自分とばかり会話が増えて<br />
-<span style="font-size: 10pt;">净是自己在跟自己对话</span><br />
-よくある風の粗悪品<br />
-<span style="font-size: 10pt;">那是样子很常见的劣质品</span><br />
-たった一歩で変わる世界に<br />
-<span style="font-size: 10pt;">对只差一步便可改变的世界</span><br />
-興味ないわけないよ自分の物だろう<br />
-<span style="font-size: 10pt;">怎么可能毫不关心 那可是属于自己的东西啊</span></h4>
-<h4>よくあるわけがないんだよ　僕らしか知らない孤独だろう<br />
-<span style="font-size: 10pt;">那是只有我们才理解的孤独啊 怎么可能是随处可见</span><br />
-亡霊みたいな昼の月が　僕らが泣いた　あの夜を知ってる<br />
-<span style="font-size: 10pt;">那亡灵般的白昼之月 知道我们哭泣过的那个夜晚</span></h4>
-<h4>僕らの生活は精一杯<br />
-<span style="font-size: 10pt;">我们的生活正尽其最大努力</span><br />
-誰の目にも留まらず継続中<br />
-<span style="font-size: 10pt;">不引人注目地持续着</span><br />
-好きだった歌を思い出して<br />
-<span style="font-size: 10pt;">回忆起喜欢的歌</span><br />
-別に　泣いても歩けるだろう<br />
-<span style="font-size: 10pt;">就算哭了也还是能好好行走吧</span></h4>
-<h4>役に立たない　僕を救えない<br />
-<span style="font-size: 10pt;">还是没能拯救这没用的我</span><br />
-純粋にすがり付いて<br />
-<span style="font-size: 10pt;">一心想抓住点什么依靠</span><br />
-あの日見上げてた<br />
-<span style="font-size: 10pt;">即使已经看不见那时仰望过的星空</span><br />
-星空を見失っても離せない<br />
-<span style="font-size: 10pt;">也放不下依恋</span></h4>
-<h4>奪い取っても　醜くったって<br />
-<span style="font-size: 10pt;">就算要去抢夺 就算丑陋不堪</span><br />
-僕は笑いたいんだ<br />
-<span style="font-size: 10pt;">我也想笑着</span><br />
-夢から醒めた様な　虚しい空　何も見えないよ<br />
-<span style="font-size: 10pt;">这如梦初醒般虚无的天空 什么也看不见</span><br />
-午前六時　脇役は最初のページを<br />
-<span style="font-size: 10pt;">凌晨六点 配角翻开了故事的第一页</span></h4>
-<hr />
-<h5 id="理一老师的音乐配上len的声音真的好赞啊"><em>理一老师的音乐配上len的声音真的好赞啊!</em></h5>
-<h5 id="有时间的话试一下翻唱"><em>有时间的话试一下翻唱?</em></h5>
-
-            </div>
-            <hr style="width: 80%;">
-            
-            <div class="sharebtnContainer">
-                <button type="button" class="sharebtn">转载分享</button>
-            </div>
-            <div class="shareContainer">
-                <div class="share" style="height:30px;background: white;">
-                    <a class="qq" href=""><i><img class="shareicon"
-                                src="https://imon.eu.org/media/images/QQ.png" alt=""></i></a>
-                    <a class="wechat" href=""><i><img class="shareicon"
-                                src="https://imon.eu.org/media/images/wechat.png" alt=""></i></a>
-                    <a class="weibo" href=""><i><img class="shareicon"
-                                src="https://imon.eu.org/media/images/weibo.png" alt=""></i></a>
-                    <a class="qzone" href=""><i><img class="shareicon"
-                                src="https://imon.eu.org/media/images/qzone.png" alt=""></i></a>
-                                <a class="douban" href=""><i><img class="shareicon"
-                                    src="https://imon.eu.org/media/images/douban.png" alt=""></i></a>
-                                <a class="facebook" href=""><i><img class="shareicon"
-                                src="https://imon.eu.org/media/images/facebook.png" alt=""></i></a>
-                    <a class="twitter" href=""><i><img class="shareicon"
-                                src="https://imon.eu.org/media/images/twitter.png" alt=""></i></a>
-                </div>
-            </div>
-            
-            
-            <div class="donateContainer">
-                <img src="https://imon.eu.org/media/images/donate.png" alt="" class="donateImg">
-            </div>
-            <div class="donateContainer">
-                <img src="https://i.loli.net/2020/08/16/LM6nQlSCFr1ebPx.png" alt="" class="donate">
-            </div>
-            
-            <div class="postfooter">
-                <ul class="post-copyright">
-                    <li><strong>文章作者：</strong>Mon</li>
-            <li><strong>原文链接：</strong>https://imon.eu.org/天文学者/</li>
-            <li><strong>版权声明：</strong>本博客所有文章除特别声明外，均采用<i class="fa fa-fw fa-creative-commons"></i>BY-NC-SA
-                许可协议。转载请注明出处！</li>
-            </ul>
-        </div>
-        <div id="otherpost">
-            
-            
-            <div class="next-post-pc">
-                <div id="npcontainer" onclick="window.location.href= 'https://imon.eu.org/hamilton/';return false">
-                    <img src="https://i.loli.net/2020/08/18/ETotFB2KV3I89fS.jpg" style="width: 100%;" class="opimg">
-                    <h4 class="optitle">【音乐剧】汉密尔顿-Hamilton-在线观看</h4>
-                </div>
-            </div>
-            <div class="next-post">
-                下一篇 <a href="https://imon.eu.org/hamilton/">【音乐剧】汉密尔顿-Hamilton-在线观看</a>
-            </div>
-            
-        </div>
-    </div>
-    </div>
-</body>
-<script>
-    //文章阅读热度
-    var pl = $("#pl").html();
-    var rootaddr = $("#rootaddr").html();
-    pl = pl.replace(rootaddr, "");
-    $("#hotnum").attr('id', pl);
-</script>
-        <div name="comment" style="background: white;margin-top:100px">
-            <div class="commentcontainer">
-                
-                <body>
-    <div id="vcomments1"></div>
-
-<script src='https://imon.eu.org/media/js/valine.min.js'></script>
-<script src="https://imon.eu.org/media/js/jquery.min.js"></script>
-<script src="https://sdk.jinrishici.com/v2/browser/jinrishici.js" charset="utf-8"></script>
-<script>
-    new Valine({
-        el: '#vcomments1',
-        appId: 'XSTvTH8hCc1P8pImkTeYjn3J-MdYXbMMI',
-        appKey: 'kXutj0u4Ba3ykGGHMQYPf1vx',
-        notify: true,
-        verify: false,
-        avatar: 'retro',
-        pageSize: 10,
-        placeholder: '既然来了，那就留个痕迹吧~',
-        visitor: true // 阅读量统计
-    })
-</script>
-
-</body>
-
-                <div class="clear"></div>
-                
-            </div>
-        </div>
     </div>
 </body>
 <script>
@@ -1024,7 +801,9 @@ Vocal / 鏡音レン (Edited by Izumi)</strong></span>&nbsp;
         }
     }
 </script>
-<script src="https://imon.eu.org/media/js/post.js"></script>
+<script>
+    hljs.initHighlightingOnLoad();
+</script>
 <script>
     //寻找所有code标签，加复制按钮鸭！(行内代码除外)
     var codes = document.getElementsByTagName('code');
@@ -1062,7 +841,7 @@ Vocal / 鏡音レン (Edited by Izumi)</strong></span>&nbsp;
     var message_Path = '/live2d/'
     var home_Path = document.getElementById("domainname").innerHTML + "/"; //此处修改为你的域名，必须带斜杠
 </script>
-<script type="text/javascript" src="https://imon.eu.org/media/live2d/js/live2d.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/850552586/ericamcdn@0.1/js/live2d.js"></script>
 <script type="text/javascript" src="https://imon.eu.org/media/live2d/js/message.js"></script>
 <script type="text/javascript">
     loadlive2d("live2d", "https://imon.eu.org/media/live2d/assets/tororo.model.json");
@@ -1096,16 +875,10 @@ Vocal / 鏡音レン (Edited by Izumi)</strong></span>&nbsp;
     bg.css("background", "url('" + bgurl + "')");
 </script>
 
+
 <script src="https://imon.eu.org/media/js/index.js"></script>
 
 
-<script>
-    //文章阅读热度
-    var pl = $("#pl").html();
-    var rootaddr = $("#rootaddr").html();
-    pl = pl.replace(rootaddr, "");
-    $("#hotnum").attr('id', pl);
-</script>
 
 <!-- 动态更改上(下)一篇博客图片框长宽 -->
 <script>
@@ -1174,17 +947,13 @@ Vocal / 鏡音レン (Edited by Izumi)</strong></span>&nbsp;
         }
     })
 
+    //加载后的事件同步（阅读量、移动端评论等
     window.onload=function(){
+        getHotnum();
         var sharepc = $(".share").eq(0).html();
         $(".share").eq(1).html(sharepc);
-        setTimeout(function(){
-            var hn = $(".leancloud-visitors-count").eq(0).html();
-            hn = '<i class="fa fa-eye" aria-hidden="true"'+
-                            'style="color: #FF8C00;"></i>&nbsp;&nbsp;热度</i>: <i'+
-                            'class="leancloud-visitors-count">'+hn+'</i></h4>'
-            $(".readercount").eq(1).html(hn);
-        }, 1000);
         document.getElementById("veditor").setAttribute("placeholder", jrsc);
+        aplayerbtnInit();
     }
 </script>
 
@@ -1209,4 +978,58 @@ Vocal / 鏡音レン (Edited by Izumi)</strong></span>&nbsp;
         }
         lazyload();
     });
+</script>
+
+<!-- <script src="https://imon.eu.org/media/js/av-min.js"></script> -->
+<!-- <script src="https://cdn.jsdelivr.net/npm/leancloud-storage@3.13.0/dist/av-min.js"></script> -->
+<!-- <script src="https://cdn.jsdelivr.net/npm/leancloud-storage@4.6.1/dist/av-live-query-min.js"></script> -->
+
+<script>
+    function getHotnum() {
+        //文章阅读热度（重构，利用leancloud原生api）
+        var pl = $("#pl").html();
+        var rootaddr = $("#rootaddr").html();
+        pl = pl.replace(rootaddr, "");
+
+        var appid = 'XSTvTH8hCc1P8pImkTeYjn3J-MdYXbMMI';
+        var appkey = 'kXutj0u4Ba3ykGGHMQYPf1vx';
+        console.log(appid, appkey)
+        if(AV==undefined)
+            AV.init({
+                appId: appid,
+                appKey: appkey
+            });
+        const query = new AV.Query('Counter');
+        query.equalTo('url', pl);
+        var time = 'Loading...';
+        query.find().then(function (results) {
+            console.log(results)
+            if (results.length == 0) {
+                console.log("0")
+                var NewCounter = AV.Object.extend('Counter');
+                var nc = new NewCounter();
+                nc.save({
+                    time: 1,
+                    title: "天文学者 / 理一 feat.鏡音レン",
+                    url: pl,
+                    xid: pl,
+                }).then(function (object) {
+                    $(".hotnum").eq(0).html(1);
+                    $(".hotnum").eq(1).html(1);
+                });
+            } else {
+                id = results[0].id;
+                var todo = AV.Object.createWithoutData('Counter', id);
+                time = results[0].attributes.time + 1;
+                todo.set("time", time);
+                todo.save();
+                console.log(todo);
+                $(".hotnum").eq(0).html(time);
+                $(".hotnum").eq(1).html(time);
+            }
+
+        }, function (error) {
+            console.log(error)
+        });
+    }
 </script>
