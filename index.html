@@ -5,9 +5,11 @@
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js"></script>
     <!-- 最新版本的 Bootstrap 核心 CSS 文件 -->
     <link rel="stylesheet" href="https://imon.eu.org/media/css/bootstrap.min.css">
-<link rel="stylesheet" href="https://imon.eu.org/media/css/live2d.css">
+    <link rel="stylesheet" href="https://imon.eu.org/media/css/live2d.css">
     <link rel="stylesheet" href="https://imon.eu.org/styles/main.css">
-	<!-- 把简介改成自己的 
+    <meta name="description" content="全新启航" />
+
+<!-- 把简介改成自己的 
     <meta name="description" content="全新启航" />
 	-->
     <title>Monの小屋</title>
@@ -15,7 +17,7 @@
 	<meta name="keywords" content="٩( ᐛ )وMONの小屋,MON,我是MON,imon.tk,MONの小屋,MON的小屋,54mon,Len_jun,ACG,技术,二次元,٩( ᐛ )و,小屋,博客,blog" />
 	<!-- 百度的统计代码&收录 -->
 	<meta name="baidu-site-verification" content="NFucXzbsmi" />
-<script type="7abeaf234e3f64a2cdbcc31c-text/javascript">
+	<script>
 var _hmt = _hmt || [];
 (function() {
   var hm = document.createElement("script");
@@ -35,13 +37,31 @@ var _hmt = _hmt || [];
 
   gtag('config', 'G-N9F6R5GLG5');
 </script>
-<!-- 360页面自动收录 -->
-  <script>
-(function(){
-var src = "https://jspassport.ssl.qhimg.com/11.0.1.js?d182b3f28525f2db83acfaaf6e696dba";
-document.write('<script src="' + src + '" id="sozz"><\/script>');
-})();
+
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/7.18.0/firebase-app.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="https://www.gstatic.com/firebasejs/7.18.0/firebase-analytics.js"></script>
+
+<script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyBJ5N8zMQHCvEsyZkgxwSaecdf-yu7TuSg",
+    authDomain: "mon-s-house.firebaseapp.com",
+    databaseURL: "https://mon-s-house.firebaseio.com",
+    projectId: "mon-s-house",
+    storageBucket: "mon-s-house.appspot.com",
+    messagingSenderId: "178180502199",
+    appId: "1:178180502199:web:b37f98aaff5eb29e659332",
+    measurementId: "G-Y3F14J5E8G"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  firebase.analytics();
 </script>
+
 </head>
 
 
@@ -186,7 +206,7 @@ Vocal / 鏡音レン (Edited by Izumi)</strong></span>&nbsp;
             if (String(snum).length == 1) {
                 snum = "0" + snum;
             }
-            document.getElementById("sitegotimeDate").innerHTML = "本站已艰难的存活了 " + dnum + " 天 ";
+            document.getElementById("sitegotimeDate").innerHTML = "本站已安全运行 " + dnum + " 天 ";
             document.getElementById("sitegotimes").innerHTML = hnum + " 小时 " + mnum + " 分 " + snum + " 秒";
         }
         setInterval("createtime()", 250);
@@ -1019,7 +1039,7 @@ Vocal / 鏡音レン (Edited by Izumi)</strong></span>&nbsp;
 
         <div id="landlord">
             <div class="message" style="opacity:0"></div>
-            <canvas id="live2d" width="240" height="287" class="live2d"></canvas>
+            <canvas id="live2d" width="240" height="286" class="live2d"></canvas>
         </div>
     </div>
     <div id="domainname" style="display:none">https://imon.eu.org</div>

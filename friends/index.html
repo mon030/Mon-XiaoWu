@@ -5,11 +5,39 @@
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js"></script>
     <!-- 最新版本的 Bootstrap 核心 CSS 文件 -->
     <link rel="stylesheet" href="https://imon.eu.org/media/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/850552586/ericamcdn@0.1/css/live2d.css">
+    <link rel="stylesheet" href="https://imon.eu.org/media/css/live2d.css">
     <link rel="stylesheet" href="https://imon.eu.org/styles/main.css">
     <meta name="description" content="全新启航" />
     <link rel="stylesheet" href="https://imon.eu.org/media/css/font-awesome.css">
     <title>Monの小屋</title>
+	<!-- 百度的统计代码 -->
+	<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?cf2ad89bfc86b223a831cfae7db9aa7e";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+<meta name="keywords" content="٩( ᐛ )وMONの小屋,MON,我是MON,imon.tk,MONの小屋,MON的小屋,54mon,Len_jun,ACG,技术,二次元,٩( ᐛ )و,小屋,博客,blog" />
+<meta name="description" content="这里是MONの小屋，欢迎做客٩( ᐛ )و" />
+<!-- 谷歌Analytics -->
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-N9F6R5GLG5"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-N9F6R5GLG5');
+</script>
+
+<!-- 视频播放器 -->
+<link href="https://vjs.zencdn.net/7.8.4/video-js.css" rel="stylesheet" />
+
+  <!-- If you'd like to support IE8 (for Video.js versions prior to v7) -->
+  <script src="https://vjs.zencdn.net/ie8/1.1.2/videojs-ie8.min.js"></script>
 </head>
 <body>
     <!-- 响应式布局，针对PC端内容显示 -->
@@ -267,7 +295,7 @@ Vocal / 鏡音レン (Edited by Izumi)</strong></span>&nbsp;
             if (String(snum).length == 1) {
                 snum = "0" + snum;
             }
-            document.getElementById("sitegotimeDate").innerHTML = "本站已艰难的存活了 " + dnum + " 天 ";
+            document.getElementById("sitegotimeDate").innerHTML = "本站已安全运行 " + dnum + " 天 ";
             document.getElementById("sitegotimes").innerHTML = hnum + " 小时 " + mnum + " 分 " + snum + " 秒";
         }
         setInterval("createtime()", 250);
