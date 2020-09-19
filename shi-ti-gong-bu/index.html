@@ -1,15 +1,42 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="先放着,到时候我再补充细节。
+
+
+
+
+
+..." />
+    <meta name="keywords" content="" />
+    <link rel="stylesheet" href="https://imon.eu.org/media/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://imon.eu.org/styles/main.css">
+    
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.18.1/build/styles/rainbow.min.css">
+    
+    <script src="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.18.1/build/highlight.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/850552586/ericamcdn@0.1/js/clipboard.min.js"></script>
+    <link rel="stylesheet" href="https://imon.eu.org/media/css/live2d.css">
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js"></script>
     <!-- 最新版本的 Bootstrap 核心 CSS 文件 -->
-    <link rel="stylesheet" href="https://imon.eu.org/media/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://imon.eu.org/media/css/live2d.css">
-    <link rel="stylesheet" href="https://imon.eu.org/styles/main.css">
-    <meta name="description" content="全新启航" />
-    <link rel="stylesheet" href="https://imon.eu.org/media/css/font-awesome.css">
+    <link href="https://cdn.bootcdn.net/ajax/libs/font-awesome/5.13.1/css/all.min.css" rel="stylesheet">
+    <!-- 数学公式 -->
+    
     <title>Monの小屋</title>
+    
+    <style>
+        .markdownIt-TOC {
+            margin-left: 28%;
+            padding-left: 2px;
+            width: 80%;
+        }
+
+        .markdownIt-TOC li {
+            padding-left: 8%;
+        }
+    </style>
+    
+	
 	<!-- 百度的统计代码 -->
 	<script>
 var _hmt = _hmt || [];
@@ -32,17 +59,23 @@ var _hmt = _hmt || [];
 
   gtag('config', 'G-N9F6R5GLG5');
 </script>
-
 <!-- 视频播放器 -->
 <link href="https://vjs.zencdn.net/7.8.4/video-js.css" rel="stylesheet" />
 
   <!-- If you'd like to support IE8 (for Video.js versions prior to v7) -->
   <script src="https://vjs.zencdn.net/ie8/1.1.2/videojs-ie8.min.js"></script>
 </head>
+
 <body>
+    <div id="landlord">
+        <div class="message" style="opacity:0"></div>
+        <canvas id="live2d" width="240" height="286" class="live2d"></canvas>
+    </div>
+    <div id="codeCopyText" style="display: none">代码复制成功了哦</div>
+    <div id="domainname" style="display:none">https://imon.eu.org</div>
     <!-- 响应式布局，针对PC端内容显示 -->
     <div id="content">
-        <div class="fricontent">
+        <div>
             <div id="bar">
                 <head>
   <!-- 引入Bootstrap核心样式文件 -->
@@ -448,57 +481,115 @@ Vocal / 鏡音レン (Edited by Izumi)</strong></span>&nbsp;
                     <div class="close"></div>
                 </div>
                 <div class="col-md-1 col-lg-3"></div>
-                <div id="main" class="col-xs-12 col-sm-12 col-md-10 col-lg-8">
-                    <body>
-    <div id="friendscontainermobile">
-        
-        
-        <div class="friend-box" onclick="window.location.href= 'https://wj.qq.com/s2/6935545/ac82/';return false">
-            <img class="friend-avatar" src="https://i.loli.net/2020/08/19/Wk9tyCUcNQTguL5.png">
-            <div class="flink-info">
-                <a href="https://wj.qq.com/s2/6935545/ac82/" class="title" target="_blank">友链申请表单</a>
-                <div style="margin-top:10px"></div>
-                <p>这是一个友链展示的例子。
-如果你想要申请友链，也可以点这里来申请。</p>
+                <div id="main" class="col-xs-12 col-sm-12 col-md-10 col-lg-7">
+                    <link rel="stylesheet" href="https://imon.eu.org/media/css/font-awesome.css">
+
+<body>
+    <div class="allcontent" id="postdetail">
+        <div class="postshow" style="padding-bottom: 0;">
+            
+            <div class="postdetailimg" style="width:100%;overflow: hidden;">
+                
+                <img src="https://i.loli.net/2020/08/16/mnYON9EKTibWeHr.jpg" class="postimage">
+                
+            </div>
+            <div class="postinfo-detail">
+                <div class="postdate"><i class="fa fa-calendar"></i>2020-09-19</div>
+            <div class="poststatus postdate"><i class="fa fa-clock-o"></i> 1 min read</div>
+            <div class="posttag">
+                
             </div>
         </div>
         
-        <div class="friend-box" onclick="window.location.href= 'https://www.v2fy.com/';return false">
-            <img class="friend-avatar" src="https://www.v2fy.com/wp-content/uploads/2020/05/cropped-v2fy.png">
-            <div class="flink-info">
-                <a href="https://www.v2fy.com/" class="title" target="_blank">V2方圆</a>
-                <div style="margin-top:10px"></div>
-                <p>发掘稀缺资源</p>
+        <div id="articlecontent">
+            <div id="texttitle" style="text-align: center">
+                <h2>试题公布</h2>
+                <!-- id 将作为查询条件 -->
+                <div id="pl" style="display:none">https://imon.eu.org/shi-ti-gong-bu/</div>
+                <div id="rootaddr" style="display:none">https://imon.eu.org</div>
+                <span id="hotnum">
+                    <h4><i class="fa fa-eye" aria-hidden="true" style="color: #FF8C00;"></i>&nbsp;&nbsp;热度</i>: <i
+                            class="hotnum">loading...</i></h4>
+                </span>
             </div>
+            <div class="text ">
+                <p>先放着,到时候我再补充细节。<br>
+<img src="https://pic.rmb.bdstatic.com/bjh/104d5af3d3ccce3cb2cca14108aa43d0.png" alt="微信图片_202009191828464.png" title="微信图片_202009191828464.png" /><br>
+<img src="https://pic.rmb.bdstatic.com/bjh/a6d8c6451b55676f4730a05943e6990b.png" alt="微信图片_20200919182846.png" title="微信图片_20200919182846.png" /><br>
+<img src="https://pic.rmb.bdstatic.com/bjh/76eb9ed59f777c77566f05e3d56b13a8.png" alt="微信图片_202009191828461.png" title="微信图片_202009191828461.png" /><br>
+<img src="https://pic.rmb.bdstatic.com/bjh/2399c9859213b7b1f336eb07266608f0.png" alt="微信图片_202009191828462.png" title="微信图片_202009191828462.png" /><br>
+<img src="https://pic.rmb.bdstatic.com/bjh/f318719db7accc99a8eeea3082f17d9f.png" alt="微信图片_202009191828463.png" title="微信图片_202009191828463.png" /></p>
+
+            </div>
+            <hr style="width: 80%;">
+            
+            <div class="sharebtnContainer">
+                <button type="button" class="sharebtn">转载分享</button>
+            </div>
+            <div class="shareContainer">
+                <div class="share" style="height:30px;background: white;">
+                    <a class="qq" href=""><i><img class="shareicon"
+                                src="https://imon.eu.org/media/images/QQ.png" alt=""></i></a>
+                    <a class="wechat" href=""><i><img class="shareicon"
+                                src="https://imon.eu.org/media/images/wechat.png" alt=""></i></a>
+                    <a class="weibo" href=""><i><img class="shareicon"
+                                src="https://imon.eu.org/media/images/weibo.png" alt=""></i></a>
+                    <a class="qzone" href=""><i><img class="shareicon"
+                                src="https://imon.eu.org/media/images/qzone.png" alt=""></i></a>
+                    <a class="douban" href=""><i><img class="shareicon"
+                                src="https://imon.eu.org/media/images/douban.png" alt=""></i></a>
+                    <a class="facebook" href=""><i><img class="shareicon"
+                                src="https://imon.eu.org/media/images/facebook.png" alt=""></i></a>
+                    <a class="twitter" href=""><i><img class="shareicon"
+                                src="https://imon.eu.org/media/images/twitter.png" alt=""></i></a>
+                </div>
+            </div>
+            
+            
+            <div class="donateContainer">
+                <img src="https://imon.eu.org/media/images/donate.png" alt="" class="donateImg">
+            </div>
+            <div class="donateContainer">
+                <img src="https://i.loli.net/2020/08/16/LM6nQlSCFr1ebPx.png" alt="" class="donate">
+            </div>
+            
+            <div class="postfooter">
+                <ul class="post-copyright">
+                    <li><strong>文章作者：</strong>Mon</li>
+            <li><strong>原文链接：</strong>https://imon.eu.org/shi-ti-gong-bu/</li>
+            <li><strong>版权声明：</strong>本博客所有文章除特别声明外，均采用<i class="fa fa-fw fa-creative-commons"></i>BY-NC-SA
+                许可协议。转载请注明出处！</li>
+            </ul>
         </div>
-        
-        
+        <div id="otherpost">
+            
+            
+            <div class="next-post-pc">
+                <div id="npcontainer" onclick="window.location.href= 'https://imon.eu.org/天文学者/';return false">
+                    
+                    <img src="https://i.loli.net/2020/08/18/EcoiG194IRN7Wuw.jpg" style="width: 100%;" class="opimg">
+                    
+                    <h4 class="optitle">天文学者 / 理一 feat.鏡音レン</h4>
+                </div>
+            </div>
+            <div class="next-post">
+                下一篇 <a href="https://imon.eu.org/天文学者/">天文学者 / 理一 feat.鏡音レン</a>
+            </div>
+            
+        </div>
+    </div>
+    </div>
     </div>
 
-    <div id="friendscontainer">
-        
-        
-        <div class="background" onclick="window.open('https://wj.qq.com/s2/6935545/ac82/');return false">
-            <div class="infoForm">
-                <img class="favatar" src="https://i.loli.net/2020/08/19/Wk9tyCUcNQTguL5.png">
-                <h2>友链申请表单</h2>
-                <h3>这是一个友链展示的例子。
-如果你想要申请友链，也可以点这里来申请。</h3>
-            </div>
-        </div>
-        
-        <div class="background" onclick="window.open('https://www.v2fy.com/');return false">
-            <div class="infoForm">
-                <img class="favatar" src="https://www.v2fy.com/wp-content/uploads/2020/05/cropped-v2fy.png">
-                <h2>V2方圆</h2>
-                <h3>发掘稀缺资源</h3>
-            </div>
-        </div>
-        
-        
-    </div>
 </body>
-                <div id="comment" class="fcl" style="background: white;">
+<script>
+    //文章阅读热度
+    var pl = $("#pl").html();
+    var rootaddr = $("#rootaddr").html();
+    pl = pl.replace(rootaddr, "");
+    $("#hotnum").attr('id', pl);
+</script>
+                <div id="comment"  class="comment" style="background: white">
                     <div class="commentcontainer">
                         
                         <style>
@@ -556,13 +647,16 @@ Vocal / 鏡音レン (Edited by Izumi)</strong></span>&nbsp;
                     </div>
                 </div>
                 </div>
-                <div class="col-md-1 col-lg-1"></div>
+                <div class="col-md-1 col-lg-2"></div>
                 <div id="bg">
                 </div>
             </div>
             
         
-
+        <div class="toc-container">
+            
+    </div>
+    </div>
     </div>
     <div class="tog">
         <div class="toggleContainer">
@@ -576,18 +670,58 @@ Vocal / 鏡音レン (Edited by Izumi)</strong></span>&nbsp;
     <div id="bgurl" style="display:none">https://api.dujin.org/pic/?btwaf=21029199</div>
     
     </div>
-    <div id="landlord">
-        <div class="message" style="opacity:0"></div>
-        <canvas id="live2d" width="240" height="286" class="live2d"></canvas>
-    </div>
-    <div id="domainname" style="display:none">https://imon.eu.org</div>
 </body>
-
-</html>
+<script>
+    var img = $("img");
+    for (var i = 0; i < img.length; i++) {
+        if (img.eq(i).attr("class") == undefined) {
+            img.eq(i).attr("class", "lazyload");
+            var imgsrc = img.eq(i).attr("src");
+            img.eq(i).attr("data-original", imgsrc);
+            img.eq(i).attr("src", "");
+            img.eq(i).hide();
+        }
+    }
+</script>
+<script>
+    hljs.initHighlightingOnLoad();
+</script>
+<script>
+    //寻找所有code标签，加复制按钮鸭！(行内代码除外)
+    var codes = document.getElementsByTagName('code');
+    if (codes.length) {
+        for (var i = 0; i < codes.length; i++) {
+            //高度/行高=文本行数
+            // var rowNum=Math.round(codes[i].height()/parseFloat(codes[i].css('line-height')));
+            // console.log("当前有"+rowNum+"行");
+            var code_id = "code_id_" + i;
+            codes[i].setAttribute("id", code_id);
+            var ci = "#" + code_id;
+            var codedot = $(ci);
+            var rowNum = Math.round(codedot.height() / parseFloat(codedot.css('line-height')));
+            if (rowNum <= 1) continue;
+            var btn = document.createElement("button");
+            btn.setAttribute("class", "copybt");
+            btn.setAttribute("data-clipboard-target", "#" + code_id);
+            btn.innerHTML = '复制代码';
+            codes[i].parentNode.insertBefore(btn, codes[i]);
+        }
+    };
+    var cop = new ClipboardJS('.copybt');
+    var codeCopyText = $("#codeCopyText").html();
+    cop.on('success', function (e) {
+        alert(codeCopyText);
+        e.clearSelection();
+    });
+    cop.on('error', function (e) {
+        alert("矮油，复制失败了...手动复制吧勇士！");
+        e.clearSelection();
+    });
+</script>
 
 <script type="text/javascript">
     var message_Path = '/live2d/'
-    var home_Path = document.getElementById("domainname").innerHTML+"/"; //此处修改为你的域名，必须带斜杠
+    var home_Path = document.getElementById("domainname").innerHTML + "/"; //此处修改为你的域名，必须带斜杠
 </script>
 <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/850552586/ericamcdn@0.1/js/live2d.js"></script>
 <script type="text/javascript" src="https://imon.eu.org/media/live2d/js/message.js"></script>
@@ -595,19 +729,189 @@ Vocal / 鏡音レン (Edited by Izumi)</strong></span>&nbsp;
     loadlive2d("live2d", "https://imon.eu.org/media/live2d/assets/tororo.model.json");
 </script>
 
-
 <script>
-        var bgchoice=$('#bgchoice').html();
-        var bg = $('#bg');
-        var bgurl = document.getElementById("bgurl").innerHTML;
-        if(bgchoice=='default')
-            for (var i = 0; i < 3; i++)
-                bgurl = bgurl.replace("\\", "/");
-        bg.css("background", "url('" + bgurl + "')");
-
-        window.onload = function(){
-            aplayerbtnInit();
-        }
+    $(function () {
+        $('.toggleContainer').click(function () {
+            $('html,body').animate({
+                scrollTop: '0px'
+            }, 800);
+        });
+        $(window).scroll(function () {
+            var st = $(window).scrollTop();
+            if (st > 30) {
+                $(".toggleContainer").fadeIn(400);
+            } else {
+                $(".toggleContainer").fadeOut(100);
+            }
+        });
+    });
 </script>
 
-    <script src="https://imon.eu.org/media/js/index.js"></script>
+<script>
+    var bgchoice = $('#bgchoice').html();
+    var bg = $('#bg');
+    var bgurl = document.getElementById("bgurl").innerHTML;
+    if (bgchoice == 'default')
+        for (var i = 0; i < 3; i++)
+            bgurl = bgurl.replace("\\", "/");
+    bg.css("background", "url('" + bgurl + "')");
+</script>
+
+
+<script src="https://imon.eu.org/media/js/index.js"></script>
+
+
+
+<!-- 动态更改上(下)一篇博客图片框长宽 -->
+<script>
+    npcontainer = document.querySelector('#npcontainer');
+    npstyle = window.getComputedStyle(npcontainer, null);
+    npwidth = npstyle.width;
+    npheight = 0.6 * Number(npwidth.replace("px", ""));
+    npheight = npheight.toString() + "px";
+    var op = $(".opimg");
+    op.css("height", npheight);
+</script>
+
+<script src="https://imon.eu.org/media/share/dist/Share.js"></script>
+
+<script>
+    var avatarSrc = $(".avatar").attr("src");
+    var dp = document.getElementsByClassName("describtion")[0].innerHTML;
+</script>
+
+
+<script>
+    var title = document.getElementById("texttitle").getElementsByTagName("h2");
+    
+    var share = new Share('.share', {
+        title: title[0].innerHTML,
+        initialized: true,
+        //默认获取网站描述
+        description: dp,
+        //网站图片默认获取的是设置的用户头像
+        image: avatarSrc,
+        //激活的分享网站
+        sites: ["weibo", "qq", "wechat", "douban", "qzone", "facebook", "twitter", "google"],
+        //微信分享PC端会生成二维码分享,移动端如果可以唤起微信最好
+        wechatQrcodeTitle: "微信扫一扫：分享", // 微信二维码提示文字
+        wechatQrcodeHelper: '<p>微信里扫一下二维码</p><p>便可将本文分享至朋友圈。</p>',
+        //关闭的网站分享
+        disabled: ['google', 'linkedin'],
+        wechatQrcodePosition: 'bottom'
+    });
+
+    //点击分享按钮展现出分享icons
+    var sharebtnTag = false;
+    $(".sharebtn").click(function () {
+        if(!sharebtnTag)
+        {
+            $(".share").show();
+            sharebtnTag = true;
+        }
+        else
+        {
+            $(".share").hide();
+            sharebtnTag = false;
+        }
+    })
+
+    var donatebtnTag = false;
+    $(".donateImg").click(function () {
+        if(!donatebtnTag)
+        {
+            $(".donate").show();
+            donatebtnTag = true;
+        }
+        else{
+            $(".donate").hide();
+            donatebtnTag = false;
+        }
+    })
+
+    //加载后的事件同步（阅读量、移动端评论等
+    window.onload=function(){
+        getHotnum();
+        var sharepc = $(".share").eq(0).html();
+        $(".share").eq(1).html(sharepc);
+        document.getElementById("veditor").setAttribute("placeholder", jrsc);
+        aplayerbtnInit();
+    }
+</script>
+
+
+<script>
+    jQuery(document).ready(function ($) {
+        function lazyload() {
+            var oLazyload = $("img.lazyload"),
+                fLazyload = function (hLazyload) {
+                    var nLazyload = $(window).height() + $(document).scrollTop();
+                    oLazyload.each(function () {
+                        $(this).offset().top < nLazyload && ($(this).trigger("appear"), oLazyload =
+                            oLazyload.not(this));
+                    }), 0 == oLazyload.length && $(window).unbind("scroll", fLazyload);
+                };
+            oLazyload.each(function () {
+                $(this).one("appear", function () {
+                    $(this).attr("src", $(this).attr("data-original"));
+                    $(this).fadeIn(500);
+                });
+            }), $(window).bind("scroll", fLazyload), fLazyload();
+        }
+        lazyload();
+    });
+</script>
+
+<!-- <script src="https://imon.eu.org/media/js/av-min.js"></script> -->
+<!-- <script src="https://cdn.jsdelivr.net/npm/leancloud-storage@3.13.0/dist/av-min.js"></script> -->
+<!-- <script src="https://cdn.jsdelivr.net/npm/leancloud-storage@4.6.1/dist/av-live-query-min.js"></script> -->
+
+<script>
+    function getHotnum() {
+        //文章阅读热度（重构，利用leancloud原生api）
+        var pl = $("#pl").html();
+        var rootaddr = $("#rootaddr").html();
+        pl = pl.replace(rootaddr, "");
+
+        var appid = 'XSTvTH8hCc1P8pImkTeYjn3J-MdYXbMMI';
+        var appkey = 'kXutj0u4Ba3ykGGHMQYPf1vx';
+        console.log(appid, appkey)
+        if(AV==undefined)
+            AV.init({
+                appId: appid,
+                appKey: appkey
+            });
+        const query = new AV.Query('Counter');
+        query.equalTo('url', pl);
+        var time = 'Loading...';
+        query.find().then(function (results) {
+            console.log(results)
+            if (results.length == 0) {
+                console.log("0")
+                var NewCounter = AV.Object.extend('Counter');
+                var nc = new NewCounter();
+                nc.save({
+                    time: 1,
+                    title: "试题公布",
+                    url: pl,
+                    xid: pl,
+                }).then(function (object) {
+                    $(".hotnum").eq(0).html(1);
+                    $(".hotnum").eq(1).html(1);
+                });
+            } else {
+                id = results[0].id;
+                var todo = AV.Object.createWithoutData('Counter', id);
+                time = results[0].attributes.time + 1;
+                todo.set("time", time);
+                todo.save();
+                console.log(todo);
+                $(".hotnum").eq(0).html(time);
+                $(".hotnum").eq(1).html(time);
+            }
+
+        }, function (error) {
+            console.log(error)
+        });
+    }
+</script>
