@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://imon.eu.org</id>
     <title>Monの小屋</title>
-    <updated>2020-10-06T01:05:51.863Z</updated>
+    <updated>2020-10-24T13:03:58.081Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://imon.eu.org"/>
     <link rel="self" href="https://imon.eu.org/atom.xml"/>
@@ -10,6 +10,42 @@
     <logo>https://imon.eu.org/images/avatar.png</logo>
     <icon>https://imon.eu.org/favicon.ico</icon>
     <rights>All rights reserved 2020, Monの小屋</rights>
+    <entry>
+        <title type="html"><![CDATA[苏联笑话合集 ! 共整理730条笑话【自整理/MOBI+AZW3+EPUB+在线阅读】]]></title>
+        <id>https://imon.eu.org/sovietjokes/</id>
+        <link href="https://imon.eu.org/sovietjokes/">
+        </link>
+        <updated>2020-10-24T12:29:37.000Z</updated>
+        <summary type="html"><![CDATA[<p><em><strong>苏联笑话以讽刺苏联和东欧诸国的领导人、政治、经济和生活状态为主，数量极大，讽刺辛辣，广为流传，永不过时。</strong></em></p>
+<h2 id=""></h2>
+<h2 id="-2"></h2>
+]]></summary>
+        <content type="html"><![CDATA[<p><em><strong>苏联笑话以讽刺苏联和东欧诸国的领导人、政治、经济和生活状态为主，数量极大，讽刺辛辣，广为流传，永不过时。</strong></em></p>
+<h2 id=""></h2>
+<h2 id="-2"></h2>
+<!-- more -->
+<h2 id="什么是苏联笑话">什么是苏联笑话?</h2>
+<p>苏联政治笑话（或称苏东政治笑话），即流行于前苏联和前东欧社会主义国家的政治笑话。这种笑话的来源很多，除了来自于在这些国家生活的人之手外，也有一些来自美国、西德及其他国家的报社杂志，此类笑话以讽刺苏联-东欧诸国的领导人、政治、经济和生活状态为主，数量极大，讽刺辛辣，广为流传，永不过时。</p>
+<h2 id="笑话下载链接">笑话下载链接</h2>
+<pre><code class="language-html">Google Drive:https://drive.google.com/drive/folders/1hVtfzBiX2R-ljWGcnAwVaRSSL5PJTgw9?usp=sharing
+</code></pre>
+<pre><code class="language-php+HTML">OneDrive:http://t.cn/A6btsJcK
+访问密码:72dx
+</code></pre>
+<pre><code>阿里云网盘: 分享功能更新中,到时候再放出链接
+</code></pre>
+<h2 id="在线阅读测试">在线阅读测试</h2>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.1.5/jszip.min.js"></script>
+<!-- epub.js-->
+<div id="area">
+<script>
+  var book = ePub("https://libs.imon.eu.org/public/others/sovietjokes.epub");
+  var rendition = book.renderTo("area", {width: 600, height: 400});
+  var displayed = rendition.display();
+</script> 
+</div>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[看看你有多二次元]]></title>
         <id>https://imon.eu.org/shi-ti-gong-bu/</id>
