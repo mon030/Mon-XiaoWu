@@ -64,7 +64,7 @@ var _hmt = _hmt || [];
   firebase.initializeApp(firebaseConfig);
   firebase.analytics();
 </script>
-
+</head>
 
 <body>
     <div id="content">
@@ -139,7 +139,7 @@ var _hmt = _hmt || [];
                         src='https://imon.eu.org/media/images/music.png' alt="音乐播放器" class="musicbtn"></i></a>
         </div>
         <div class="avatar-border">
-            <img src="https://imon.eu.org/images/avatar.png?v=1623220978648" class="avatar">
+            <img src="https://imon.eu.org/images/avatar.png?v=1623223424419" class="avatar">
         </div>
         <div class="sitename">Monの小屋</div>
         <span class="description" data-text='["全新启航"]'>&nbsp;</span>
@@ -710,7 +710,7 @@ Vocal / 鏡音レン (Edited by Izumi)</strong></span>&nbsp;
             imglazyloadinit();
             lazyload();
             codeinit();
-            if ("valine" == "twikoo") {
+            if ("default" == "twikoo") {
                 //twikoo头像更换
                 setTimeout(replaceAvatar, 3000);
                 setTimeout(replaceAvatar, 8000); //部分博主站点速度加载过慢，再添加一个延迟
@@ -1034,7 +1034,7 @@ menulist.eq(i).show();
                         <!-- 移动端欢迎页 -->
 <div class="welcome">
     <div class="avatar-border">
-        <img src="https://imon.eu.org/images/avatar.png?v=1623220978648" class="avatar">
+        <img src="https://imon.eu.org/images/avatar.png?v=1623223424419" class="avatar">
     </div>
     <span class="mobiledescribtion"></span>
 </div>
@@ -1120,35 +1120,6 @@ menulist.eq(i).show();
 </script>
                     </div>
                     <div style="display:none">
-        <div id="vcomments">
-        </div>
-        <script>
-            var valine = new Valine();
-            var curpath = window.location.pathname;
-            if (curpath[curpath.length - 1] != '/')
-                curpath += '/'
-            valine.init({
-                el: '#vcomments',
-                appId: 'XSTvTH8hCc1P8pImkTeYjn3J-MdYXbMMI',
-                appKey: 'kXutj0u4Ba3ykGGHMQYPf1vx',
-                notify: true,
-                verify: false,
-                avatar: 'retro',
-                pageSize: 10,
-                placeholder: '既然来了，何不畅所欲言呢？',
-                recordIP: true,
-                path: curpath //[重点] 记得添加path路径
-            });
-        </script>
-        <script type="text/javascript">
-            var jrsc = '既然来了，何不畅所欲言呢？';
-            jinrishici.load(function (result) {
-                // 自己的处理逻辑
-                jrsc = result.data.content + "\n「" + result.data.origin.title + "」" + result.data.origin
-                    .dynasty + " · " + result.data.origin.author;
-            });
-        </script>
-
 </div>
                     <link rel="stylesheet" href="https://imon.eu.org/media/css/font-awesome.css">
 
@@ -1304,6 +1275,8 @@ menulist.eq(i).show();
                     <div :class="post.elegcontainer">
                         <img :src="post.feature" alt="" :class="post.imgclass">
                         
+                        <img class="eleg-swordsmen-left" src="https://imon.eu.org/media/images/swordsmenleft.webp" alt="">
+                        
                         <div class="eleg-info">
                             <span class="eleg-title">{{post.title}}</span>
                             <div style="margin-top:15px;">
@@ -1337,6 +1310,8 @@ menulist.eq(i).show();
                                 <a :href="post.link" class="eleg-btn" data-pjax>阅读全文</a>
                             </div>
                         </div>
+                        
+                        <img class="eleg-swordsmen" src="https://imon.eu.org/media/images/swordsmen.webp" alt="">
                         
                         <img :src="post.feature" alt="" :class="post.imgclass">
                     </div>
