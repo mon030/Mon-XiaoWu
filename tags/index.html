@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="https://imon.eu.org/media/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://imon.eu.org/styles/main.css">
     <link rel="stylesheet" href="https://imon.eu.org/media/css/font-awesome.css">
-    <title>Monの小屋</title>
+    <title>Monの小屋 - TAGS</title>
 </head>
 
 
@@ -43,7 +43,7 @@
     
     <!--------- daovocie功能👆 ------------------->
     <!-- -----------------twikoo评论系统引入👇 --------->
-    <script src="https://cdn.jsdelivr.net/npm/twikoo@1.3.0/dist/twikoo.all.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/twikoo@1.3.1/dist/twikoo.all.min.js"></script>
     <!-- -----------------twikoo评论系统引入👆 --------->
     <!---------------- leancloud api 功能依赖引入👇 -------->
     <script src="https://cdn.jsdelivr.net/npm/leancloud-storage@3.13.0/dist/av-min.js"></script>
@@ -54,6 +54,11 @@
     <!---------------- 今日诗词api功能依赖👇 ----------------------->
     <script src="https://sdk.jinrishici.com/v2/browser/jinrishici.js" charset="utf-8"></script>
     <!---------------- 今日诗词api功能依赖👆 ----------------------->
+    <!---------------- 今日诗词api功能依赖👇 ----------------------->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/ispeak-bber/ispeak-bber.min.js" charset="utf-8"></script>
+    <!---------------- 哔哔功能依赖👆 ----------------------->
+
+
 </head>
 
 <style>
@@ -69,8 +74,8 @@
     <!--=------ 页面加载动态画面👇 --------------->
     <div class="pjaxloading" onclick="pjaxloadingClose()">
         <div class="loadingbackground"></div>
-        <div id="loading">
-            <div class="loading">
+        <div id="loading-aname">
+            <div class="loading-aname">
             </div>
         </div>
     </div>
@@ -84,7 +89,7 @@
                         src='https://imon.eu.org/media/images/music.png' alt="音乐播放器" class="musicbtn"></i></a>
         </div>
         <div class="avatar-border">
-            <img src="https://imon.eu.org/images/avatar.png?v=1623223424419" class="avatar">
+            <img src="https://imon.eu.org/images/avatar.png?v=1626838771282" class="avatar">
         </div>
         <div class="sitename">Monの小屋</div>
         <span class="description" data-text='["全新启航"]'>&nbsp;</span>
@@ -99,12 +104,12 @@
         
         <div class="search">
             <!-- <input type="text" class="search-input" placeholder="标题搜索(●'◡'●)" /> -->
-            <input type="text" class="search-input" placeholder="标题搜索 ⚆_⚆ つ♡">
+            <input type="text" class="search-input" placeholder="搜点什么 ⚆_⚆ つ♡">
             <div class="search-results"></div>
         </div>
         
     <div class="share-button">
-        <span>联系我</span>
+        <span>Contact Me</span>
         
         
         
@@ -159,20 +164,15 @@
         
 
         
-            
+        
+        
         <div class="mchocie description">
             <a data-pjax href="https://imon.eu.org/friends" class="menubutton" style="margin-right: 15px;">
                 <i><img class="icon menuicon" src="" alt="友人帐"></i>&nbsp;<span data-text="友人帐">友人帐</span>
             </a>
         </div>
         
-        
-        <div class="mchocie description">
-            <a data-pjax href="#terrestrial" id="fog_go" class="open-popup menubutton" style="margin-right: 15px;">
-                    <i><img class="icon menuicon" src="" alt="御风飞行"></i>&nbsp;<span data-text="御风飞行">御风飞行</span>
-            </a>
-        </div>
-        
+        <!--  -->
     </div>
     <!------------ 加载菜单按钮👆 ------------------------->
     <hr>
@@ -297,7 +297,7 @@ Vocal / 鏡音レン (Edited by Izumi)</strong></span>&nbsp;
 <script src="https://imon.eu.org/media/js/mainfunc.js"></script>
 
 <!------------- Fog1.0版本彩蛋👇 -------------->
-    <section id="terrestrial" class="popup">
+    <!-- <section id="terrestrial" class="popup">
         <a href="#" class="back">&lt; back</a>
     </section>
 
@@ -324,11 +324,16 @@ Vocal / 鏡音レン (Edited by Izumi)</strong></span>&nbsp;
             regisFogUser(sitename,siteurl);
         }
         fog_goregis();
-    </script>
+    </script> -->
 <!------------- Fog1.0版本彩蛋👆 -------------->
 
 
 <!------ 根据自定义配置声明变量👇 --------------------->
+    
+    <script>
+        let postnumChoice = true
+    </script>
+    
     
     <script>
         let shareChoice = true
@@ -438,12 +443,6 @@ Vocal / 鏡音レン (Edited by Izumi)</strong></span>&nbsp;
     <!----------根据自定义配置设置图标信息👇---------->
     <script>
         var icondict = new Array();
-    </script>
-    
-    <script>
-        var iconname = "首页";
-        var iconurl = "";
-        icondict[iconname] = iconurl;
     </script>
     
     <!----------根据自定义配置设置图标信息👆---------->
@@ -631,7 +630,9 @@ Vocal / 鏡音レン (Edited by Izumi)</strong></span>&nbsp;
             hljs.highlightBlock(block);
         });
         //文章热度
-        getHotnum();
+        if(postnumChoice){
+            getHotnum();
+        }
         //文章索引
         toginit();
         //清空搜索栏
@@ -652,10 +653,9 @@ Vocal / 鏡音レン (Edited by Izumi)</strong></span>&nbsp;
                 shareInit();
             if (donateChoice)
                 donateInit();
-            imglazyloadinit();
             lazyload();
             codeinit();
-            if ("default" == "twikoo") {
+            if ("valine" == "twikoo") {
                 //twikoo头像更换
                 setTimeout(replaceAvatar, 3000);
                 setTimeout(replaceAvatar, 8000); //部分博主站点速度加载过慢，再添加一个延迟
@@ -827,7 +827,37 @@ menulist.eq(i).show();
 }
 }
 </script>
-<!--------------------- 菜单栏图标加载功能👆 -----------------------></div>
+<!--------------------- 菜单栏图标加载功能👆 ----------------------->
+
+<script>
+    //--------------------bber-onetalk加载👇--------------------------------
+    function bberonetalkLoad(){
+        bberjsonurl = '';
+        if ( $("#bber-talk").length > 0 ) {
+        jsonUrl = bberjsonurl
+        $.getJSON(jsonUrl+"?t="+Date.parse( new Date()),function(res){
+        var bberHtml = ''
+        $.each(res.data, function(i, item){
+            d = new Date(item.date)
+            date = d.getFullYear()+'/'+(d.getMonth()+1)+'/'+d.getDate() +' '+d.getHours()+':'+d.getMinutes()+':'+d.getSeconds()
+            dataTime = '<span class="datatime">'+date+'</span>'
+            bberHtml += '<li class="item item-'+(i+1)+'">'+dataTime+'： <a data-pjax href="https://imon.eu.org/bber">'+item.content+'</a></li>'
+        });
+        $('#bber-talk').append('<span class="index-talk-icon"><svg viewBox="0 0 1024 1024" width="21" height="21"><path d="M184.32 891.667692c-12.603077 0-25.206154-2.363077-37.809231-7.876923-37.021538-14.966154-59.864615-49.624615-59.864615-89.009231v-275.692307c0-212.676923 173.292308-385.969231 385.969231-385.969231h78.76923c212.676923 0 385.969231 173.292308 385.969231 385.969231 0 169.353846-137.846154 307.2-307.2 307.2H289.083077l-37.021539 37.021538c-18.904615 18.116923-43.323077 28.356923-67.741538 28.356923zM472.615385 195.347692c-178.018462 0-322.953846 144.935385-322.953847 322.953846v275.692308c0 21.267692 15.753846 29.144615 20.48 31.507692 4.726154 2.363077 22.055385 7.876923 37.021539-7.08923l46.473846-46.473846c6.301538-6.301538 14.178462-9.452308 22.055385-9.452308h354.461538c134.695385 0 244.184615-109.489231 244.184616-244.184616 0-178.018462-144.935385-322.953846-322.953847-322.953846H472.615385z"></path><path d="M321.378462 512m-59.076924 0a59.076923 59.076923 0 1 0 118.153847 0 59.076923 59.076923 0 1 0-118.153847 0Z"></path><path d="M518.301538 512m-59.076923 0a59.076923 59.076923 0 1 0 118.153847 0 59.076923 59.076923 0 1 0-118.153847 0Z"></path><path d="M715.224615 512m-59.076923 0a59.076923 59.076923 0 1 0 118.153846 0 59.076923 59.076923 0 1 0-118.153846 0Z"></path></svg></span><ul class="talk-list">'+bberHtml+'</ul>')
+        //Lately({ 'target': '#bber-talk .datatime' });
+        });
+        function Roll (){
+        var list_li = $('.talk-list li'),cur_li = list_li.first(),last_li = list_li.last();
+        last_li.after(cur_li);
+        };
+        setInterval(Roll,3000);
+    }
+    }
+  //--------------------bber-onetalk加载👆--------------------------------
+</script>
+
+
+</div>
                 <!--------------- pc端菜单栏👆 ---------------->
                
                 <!----------- 移动端导航栏👇 ----------------->
@@ -924,6 +954,7 @@ menulist.eq(i).show();
         
         
         
+        
           
         <li><a data-pjax href="https://imon.eu.org/friends">友链</a></li>
 
@@ -984,7 +1015,7 @@ menulist.eq(i).show();
     if(bgchoice=='default')
         var plbgurl = ""
     else  
-        var plbgurl = "static.jd.com/ddimg/jfs/t1/179566/5/2289/669741/609156a3E8429ffc3/4cdfa9d35f70b44d.png"
+        var plbgurl = ""
     $(".plbg").attr("src",plbgurl);
     $(".plbg").fadeIn(200);
 </script>
@@ -998,7 +1029,7 @@ menulist.eq(i).show();
                         <div class="tagsbackgroundleft"></div>
                         <div class="tags-container">
                             
-                            <img class="tagsimg" src="https://dd-static.jd.com/ddimg/jfs/t1/178095/11/8354/2931247/60c05eb0E15786e10/b039474668ec37ad.png" alt="">
+                            <img class="tagsimg" src="https://i.loli.net/2020/08/17/75spaJGXz8rBZRw.png" alt="">
                             
                         
                             <a data-pjax class="tag" href="https://imon.eu.org/frBugYa8F/"># 苏联笑话</a>
@@ -1112,7 +1143,7 @@ menulist.eq(i).show();
         <!-- 背景图加载方式👆 -->
         <div id="landlord">
             <div class="message" style="opacity:0"></div>
-            <canvas id="live2d" width="240" height="286" class="live2d"></canvas>
+        <canvas id="live2d" width="240" height="286" class="live2d"></canvas>
         </div>
         <div id="domainname" style="display:none">https://imon.eu.org
                 </div>

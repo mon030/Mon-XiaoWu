@@ -1,229 +1,55 @@
+<!-- <style>
+  #bber-talk{display:-webkit-flex;display:flex;width:100%;line-height:2em;height:45px;max-width:760px;text-align:left;padding:5px 15px;margin-bottom:3em;position: relative;background-color: var(--light-header);border-radius:8px;font-size:15px;}
+#bber-talk svg{fill: currentColor;vertical-align: middle;display: inline;margin-right:5px;}
+.talk-list{margin: 0;max-height: 35px;overflow: hidden;}
+.talk-list li {list-style: none;margin-bottom: 10px;width: 100%;white-space: nowrap;text-overflow: ellipsis;overflow: hidden;}
+</style>
+<div id="bber-talk"></div>
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
+<script>
+  //依赖 jQuery 库，其中 jsonUrl 改为自己的
+$(document).ready(function(){
+  if ( $("#bber-talk").length > 0 ) {
+    jsonUrl = "https://7477-twikoo-6gbp33x72a40527e-1259442930.tcb.qcloud.la/json/bber.json"
+    $.getJSON(jsonUrl+"?t="+Date.parse( new Date()),function(res){
+      var bberHtml = ''
+      $.each(res.data, function(i, item){
+        d = new Date(item.date)
+        date = d.getFullYear()+'/'+(d.getMonth()+1)+'/'+d.getDate() +' '+d.getHours()+':'+d.getMinutes()+':'+d.getSeconds()
+        dataTime = '<span class="datatime">'+date+'</span>'
+        bberHtml += '<li class="item item-'+(i+1)+'">'+dataTime+'： <a href="https://immmmm.com/bb/">'+item.content+'</a></li>'
+      });
+      $('#bber-talk').append('<span class="index-talk-icon"><svg viewBox="0 0 1024 1024" width="21" height="21"><path d="M184.32 891.667692c-12.603077 0-25.206154-2.363077-37.809231-7.876923-37.021538-14.966154-59.864615-49.624615-59.864615-89.009231v-275.692307c0-212.676923 173.292308-385.969231 385.969231-385.969231h78.76923c212.676923 0 385.969231 173.292308 385.969231 385.969231 0 169.353846-137.846154 307.2-307.2 307.2H289.083077l-37.021539 37.021538c-18.904615 18.116923-43.323077 28.356923-67.741538 28.356923zM472.615385 195.347692c-178.018462 0-322.953846 144.935385-322.953847 322.953846v275.692308c0 21.267692 15.753846 29.144615 20.48 31.507692 4.726154 2.363077 22.055385 7.876923 37.021539-7.08923l46.473846-46.473846c6.301538-6.301538 14.178462-9.452308 22.055385-9.452308h354.461538c134.695385 0 244.184615-109.489231 244.184616-244.184616 0-178.018462-144.935385-322.953846-322.953847-322.953846H472.615385z"></path><path d="M321.378462 512m-59.076924 0a59.076923 59.076923 0 1 0 118.153847 0 59.076923 59.076923 0 1 0-118.153847 0Z"></path><path d="M518.301538 512m-59.076923 0a59.076923 59.076923 0 1 0 118.153847 0 59.076923 59.076923 0 1 0-118.153847 0Z"></path><path d="M715.224615 512m-59.076923 0a59.076923 59.076923 0 1 0 118.153846 0 59.076923 59.076923 0 1 0-118.153846 0Z"></path></svg></span><ul class="talk-list">'+bberHtml+'</ul>')
+      Lately({ 'target': '#bber-talk .datatime' });
+    });
+    function Roll (){
+      var list_li = $('.talk-list li'),cur_li = list_li.first(),last_li = list_li.last();
+      last_li.after(cur_li);
+    };
+    setInterval(Roll,3000);
+  }
+});
+</script> -->
 <!DOCTYPE html>
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
-    <meta name="description" content="Privacy Policy (Terms of Service)
-Welcome to MONの小屋 Thank you for using our service. These Terms of Service (“Terms of S..." />
-    <meta name="keywords" content="" />
-    <link rel="stylesheet" href="https://imon.eu.org/media/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://imon.eu.org/styles/main.css">
-    <!-- 代码渲染风格css -->
-    
-    <link rel="stylesheet" href="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.18.1/build/styles/rainbow.min.css">
-    
-    <!-- 代码高亮插件 -->
-    <script src="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.18.1/build/highlight.min.js"></script>
-    <!-- 代码复制插件 -->
-    <script src="https://cdn.jsdelivr.net/gh/850552586/ericamcdn@0.1/js/clipboard.min.js"></script>
-    <!-- live2d插件 -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/850552586/ericamcdn@0.1/css/live2d.css">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js"></script>
-    <!-- 最新版本的 Bootstrap 核心 CSS 文件 -->
-    <link href="https://cdn.bootcdn.net/ajax/libs/font-awesome/5.13.1/css/all.min.css" rel="stylesheet">
-    <!-- 数学公式 -->
-    
-    <title>Monの小屋 — Privacy Policy (Terms of Service)</title>
-
-    <!-- 大纲索引css调整 -->
-    
-    <style>
-        .markdownIt-TOC {
-            margin-left: 28%;
-            padding-left: 2px;
-            width: 80%;
-        }
-
-        .markdownIt-TOC li {
-            padding-left: 8%;
-        }
-    </style>
-    
-	<meta name="keywords" content="٩( ᐛ )وMONの小屋,MON,我是MON,imon.tk,MONの小屋,MON的小屋,54mon,Len_jun,ACG,技术,二次元,٩( ᐛ )و,小屋,博客,blog" />
-<meta name="description" content="这里是MONの小屋，欢迎做客٩( ᐛ )و" />
-		<!-- 百度的统计代码 -->
-	<script>
-var _hmt = _hmt || [];
-(function() {
-  var hm = document.createElement("script");
-  hm.src = "https://hm.baidu.com/hm.js?cf2ad89bfc86b223a831cfae7db9aa7e";
-  var s = document.getElementsByTagName("script")[0]; 
-  s.parentNode.insertBefore(hm, s);
-})();
-</script>
-
-<!-- 谷歌Analytics -->
-<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-N9F6R5GLG5"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-N9F6R5GLG5');
-</script>
-<!-- 视频播放器 -->
-<link href="https://vjs.zencdn.net/7.8.4/video-js.css" rel="stylesheet" />
-
-  <!-- If you'd like to support IE8 (for Video.js versions prior to v7) -->
-  <script src="https://vjs.zencdn.net/ie8/1.1.2/videojs-ie8.min.js"></script>
-  
-  <!-- 360页面自动收录 -->
-  <script>
-(function(){
-var src = "https://jspassport.ssl.qhimg.com/11.0.1.js?d182b3f28525f2db83acfaaf6e696dba";
-document.write('<script src="' + src + '" id="sozz"><\/script>');
-})();
-</script>
+    <link rel="stylesheet" href="https://imon.eu.org/media/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/850552586/ericamcdn@0.1/css/live2d.css">
+    <link rel="stylesheet" href="https://imon.eu.org/styles/main.css">
+    <link rel="stylesheet" href="https://imon.eu.org/media/css/font-awesome.css">
+    <meta name="description" content="全新启航" />
+    <title>Monの小屋</title>
 </head>
+
 
 <body>
-    <div id="landlord">
-        <div class="message" style="opacity:0"></div>
-        <canvas id="live2d" width="240" height="286" class="live2d"></canvas>
-    </div>
-    <div id="domainname" style="display:none">https://imon.eu.org</div>
     <div id="content">
-        <div>
-            <!----------- 移动端导航栏👇 ----------------->
-            <div id="bar">
-                <head>
-  <!-- 引入Bootstrap核心样式文件 -->
-  <link rel="stylesheet" href="https://imon.eu.org/media/css/bootstrap.min.css">
-</head>
-<style>
-  .navmobile {
-    z-index: 15;
-    max-height: 40vh;
-    overflow-y: scroll;
-    overflow-x: hidden;
-  }
-
-  @media screen and (max-width: 1200px) {
-    .navbar {
-      max-width: 100vw;
-    }
-  }
-
-  @media screen and (max-width:1200px) and (min-width: 768px) {
-    @media (min-width: 768px) {
-      .navbar-nav {
-        float: right;
-        margin: 0;
-      }
-    }
-  }
-
-  @media screen and (max-width:768px) {
-    .mbapspan {
-      padding: 0;
-    }
-  }
-</style>
-<div class="pjaxloading"  onclick="pjaxloadingClose()">
-  <div class="loadingbackground"></div>
-  <div id="loading">
-    <div class="loading">
-    </div>
-  </div>
-</div>
-<nav class="navbar navbar-inverse navbar-fixed-top navmobile">
-  <div class="container-fluid">
-    <!-- Brand and toggle get grouped for better mobile display -->
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#barmenu"
-        aria-expanded="false" id="barbutton">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-      <a data-pjax class="navbar-brand" href="https://imon.eu.org">Monの小屋&nbsp;&nbsp;|</a>
-      <span class="navbar-brand mbapspan"><i id="mbaplayer" class="fa fa-play-circle-o" aria-hidden="true"
-          style="font-size: 28px;top: 12px;position: absolute;" onclick="aplayerPlay();"></i></span>
-    </div>
-
-    <!-- Collect the nav links, forms, and other content for toggling -->
-    <div class="collapse navbar-collapse" id="barmenu">
-      <ul class="nav navbar-nav">
-        
-        
-        <li>
-          <a data-pjax href="/">
-            首页
-          </a>
-        </li>
-        
-        
-        
-        <li>
-          <a data-pjax href="/archives">
-            归档
-          </a>
-        </li>
-        
-        
-        
-        <li>
-          <a data-pjax href="/tags">
-            标签
-          </a>
-        </li>
-        
-        
-        
-        <li>
-          <a data-pjax href="https://imon.eu.org/about">
-            关于
-          </a>
-        </li>
-        
-        
-        
-        
-          
-        <li><a data-pjax href="https://imon.eu.org/friends">友链</a></li>
-
-        
-        </ul>
-      </div><!-- /.navbar-collapse -->
-    </div><!-- /.container-fluid -->
-  </nav>
-
-
-  <!-- 引入jQuery核心js文件 -->
-  <script src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js"></script>
-  <script>
-    let btstate = false;
-    var bt = $("#barbutton");
-    var bm = $("#barmenu");
-    bt.click(function () {
-      dropdown();
-    })
-    function dropdown() {
-      console.log(btstate);
-      //下拉
-      if (btstate == false) {
-        bt.removeClass("collapsed");
-        bt.attr("aria-expanded", "true");
-        bm.attr("aria-expanded", "true")
-        bm.fadeIn(700);
-        btstate = true;
-      }
-      else {
-        bt.addClass("collapsed");
-        bt.attr("aria-expanded", "false");
-        bm.removeClass("in");
-        bm.hide();
-        bm.attr("aria-expanded", "false");
-        btstate = false;
-      }
-    }
-  </script> 
-            </div>
-            <!----------- 移动端导航栏👆 ----------------->
-
-            <!--------------- pc端菜单栏👇 ---------------->
-            <div class="side"><head>
+        <div class="nav-large">
+            <div class="row">
+                <div class="side"><head>
     <link rel="stylesheet" href="https://imon.eu.org/media/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://imon.eu.org/styles/main.css">
     
@@ -1063,11 +889,8 @@ menulist.eq(i).show();
 
 
 </div>
-            <!--------------- pc端菜单栏👆 ---------------->
-
-            <!-- ----------------左侧菜单栏html 👇-------------------------------------->
-            
-            <div>
+                <!-- ----------------左侧菜单栏html 👇-------------------------------------->
+                
                 <div id="tab1" class="tab">
                     <div class="bars">
                         <span></span>
@@ -1077,216 +900,186 @@ menulist.eq(i).show();
                     <div class="close"></div>
                 </div>
                 <div class="col-md-1 col-lg-3"></div>
-                <!-- main标签，pjax渲染时加载以下内容👇 -->
-                <div id="main" class="col-xs-12 col-sm-12 col-md-12 col-lg-7" style="padding:0;">
-                    <link rel="stylesheet" href="https://imon.eu.org/media/css/font-awesome.css">
+                <div class="mobilebar"><head>
+  <!-- 引入Bootstrap核心样式文件 -->
+  <link rel="stylesheet" href="https://imon.eu.org/media/css/bootstrap.min.css">
+</head>
+<style>
+  .navmobile {
+    z-index: 15;
+    max-height: 40vh;
+    overflow-y: scroll;
+    overflow-x: hidden;
+  }
 
-<body>
-    <div class="allcontent" id="postdetail">
-        <div class="postshow postpadding" style="padding-bottom: 0;">
-            
-            <div class="postdetailimg">
-                
-                <img src="https://i.loli.net/2020/08/16/mnYON9EKTibWeHr.jpg" class="postimage">
-                
-            </div>
-            <div class="postinfo-detail">
-                <div class="postdate"><i class="fa fa-calendar"></i>2019-06-01</div>
-            <div class="poststatus postdate"><i class="fa fa-clock-o"></i> 10 min read</div>
-            <div class="posttag">
-                
-            </div>
-        </div>
-        
-        <div id="articlecontent">
-            <div id="texttitle" style="text-align: center">
-                <h2 id="ptitle">Privacy Policy (Terms of Service)</h2>
-                <!-- id 将作为查询条件 -->
-                <div id="pl" style="display:none">https://imon.eu.org/privacy-policy-terms-of-service-en/</div>
-                <div id="rootaddr" style="display:none">https://imon.eu.org</div>
-                
-                    
-                    <span id="hotnum">
-                        <h4><i class="fa fa-eye" aria-hidden="true" style="color: #FF8C00;"></i>&nbsp;&nbsp;热度</i>: <i
-                                class="hotnum">loading...</i></h4>
-                    </span>
-                    
-                
-            </div>
-            <div class="text ">
-                <h1 id="privacy-policy-terms-of-service">Privacy Policy (Terms of Service)</h1>
-<h4 id="welcome-to-monの小屋-thank-you-for-using-our-service-these-terms-of-service-terms-of-service-apply-to-your-relationship-with-the-website-and-related-services-services-between-monの小屋-hereafter-referred-to-as-monの小屋-this-site-or-us">Welcome to MONの小屋 Thank you for using our service. These Terms of Service (“Terms of Service”) apply to your relationship with the website and related services (“Services”) between MONの小屋 (hereafter referred to as “MONの小屋”, “This site ” or “us”).</h4>
-<p><span style="color: #ff0000;"><strong>By using our services, you agree to the terms. Please read carefully.</strong></span></p>
-<h2 id="use-service">Use service</h2>
-<p>You must comply with all terms of the service.<br>
-Please do not abuse our services. Use of our services does not give you any intellectual property rights in our services or the content you access. You may only use our services to the extent permitted by law.</p>
-<h3 id="privacy">privacy</h3>
-<p>MONの小屋’s privacy statement describes how we treat your personal data and protect your privacy when using our services.</p>
-<h3 id="comment">comment</h3>
-<p>When a visitor leaves a comment, we collect the data displayed in the comment form, along with the visitor’s IP address and the browser’s user agent string to help check for spam comments.<br>
-The anonymized string (also known as a hash) generated by your email address may be provided to the Gravatar service to confirm that you are using the service. The privacy policy of the Gravatar service is here: https://automattic.com/privacy/. Once your review is approved, your profile image will be publicly displayed next to your comment.</p>
-<p>Our comment function is implemented by <a href="https://valine.js.org/">Valine.js</a> and <a href="leancloud.app">LeanCloud</a>. LeanCloud's use agreement is here: https://leancloud.app/privacy/</p>
-<p><strong>We promote freedom of speech, but please do not publish pictures and speech that violate the laws of Mainland China, Hong Kong and Singapore. Violators are responsible for the consequences.</strong></p>
-<p>If you need to delete the comment or reply you left, please contact us via the email below, we will process and reply as soon as possible after seeing your letter.</p>
-<h3 id="media">media</h3>
-<p>If you upload images to this site, you should avoid uploading images that have embedded location information (EXIF GPS). Visitors to this site will be able to download and extract location information from the images on this site.</p>
-<h3 id="cookies">Cookies</h3>
-<p>If you leave a comment on our site, you can choose to save your name, email address and website with cookies. This is to make it easier for you to fill out the relevant content without having to comment again. These cookies will be kept for one year.<br>
-If you have an account for this site and you are logged in to this site, we will set a temporary cookie to confirm that your browser accepts cookies. This cookie does not contain personal data and will be discarded when you close your browser.<br>
-When you log in, we also set up multiple cookies to save your login information and screen display options. Login cookies are kept for two days, while the on-screen display options cookies are retained for one year. If you select “Remember me,” your login status will remain for two weeks. If you log out of your account, the cookies used to log in will be removed.<br>
-If you edit or post an article, we will save an extra cookie in your browser. This cookie does not contain personal data and only records the ID of the article you just edited. This cookie will be kept for one day.</p>
-<h3 id="embedded-content-from-other-sites">Embedded content from other sites</h3>
-<p>Articles on this site may contain embedded content (such as videos, images, articles, etc.). The behavior of embedded content from other sites is no different than your direct access to these other sites.<br>
-These sites may collect information about you, use cookies, embed additional third-party tracking programs, and monitor your interactions with these embedded content, including tracking you and embedded content when you have accounts for those sites and log in to those sites. Interaction.</p>
-<h3 id="how-long-do-we-keep-your-information">How long do we keep your information?</h3>
-<p>If you leave a comment, the comment and its metadata will be saved indefinitely. We do this to be able to identify and automatically approve any subsequent comments without adding these subsequent comments to the pending queue.<br>
-For registered users of this website, we also store the personal information provided by the user in the profile. All users can view, edit or delete their personal information at any time (except that the user name cannot be changed), and the site administrator can view and edit that information.</p>
-<h3 id="what-is-your-right-to-your-information">What is your right to your information?</h3>
-<p>If you have an account with this site, or have left a comment, you can ask us to provide an export file of your personal data that we have, which also includes all the data you provide to us. You can also ask us to erase all personal data about you. This does not include data that we must retain due to management, regulatory or security needs.</p>
-<h3 id="where-do-we-send-your-information">Where do we send your information?</h3>
-<p>Visitor comments may be checked by the automated spam review service.</p>
-<h2 id="copyright-protection">Copyright Protection</h2>
-<p>What you post in our service**<br>
-Some of our services allow you to submit content. You retain ownership of any intellectual property rights held in the Content.**</p>
-<p>When you upload content or otherwise submit content to our services, you grant MONの小屋 (imon.tk) permission to use, hold, store, copy, modify, create derivative works and more. The permissions you grant in this license can only be used to operate, promote and improve our services, as well as to develop new services. This license is still valid after you stop using our services.</p>
-<h3 id="about-the-software-in-our-service">About the software in our service</h3>
-<p>MONの小屋 grants you a royalty-free, non-transferable, non-exclusive global personal license that allows you to use the software included in the service provided by MONの小屋. This license is only intended to allow you to use and benefit from the services provided by MON の lodge in the manner permitted by these Terms. You may not copy, modify, publish, sell or rent any part of our Services or the Software contained therein, or reverse engineer or attempt to extract the source code of the Software, unless the law prohibits the above restrictions or you have obtained a MON の 小屋Written permission.</p>
-<h3 id="warranty-and-disclaimer">Warranty and Disclaimer</h3>
-<p>We make no commitment to the content of the service, the specific functionality of the service, or its reliability, availability or ability to meet your needs.</p>
-<p>To the extent permitted by law, we exclude all warranties.</p>
-<h3 id="intellectual-property">Intellectual property</h3>
-<p>MONの小屋 has rights to the services and related software and technical services used by the Service, including intellectual property or other legal protection.</p>
-<p>Content transmitted through the Service is protected by copyright laws, trademark laws, patent laws, or other laws; users may not modify, rent, distribute, or derivative other works without the express permission of MON’s lodge.</p>
-<p>The User has non-exclusive right to use the Software used in the Service, but may not, or permit, any third party to copy, modify, sell or derivative the Product.</p>
-<p>All design drawings and other designs, products and service names of MONの小屋平台 are trademarks and logos of MONの小屋. No one may use, copy or otherwise use it.</p>
-<p>MON の lodge has full intellectual property rights to its homemade content and other proprietary content obtained through authorization. No unit or individual may reproduce, distribute and provide viewing services or other infringements of MON’s cottage intellectual property rights without the permission of MONの小屋.</p>
-<h3 id="audiovisual-copyright">Audiovisual copyright</h3>
-<p>We does not provide any audiovisual upload service, all content is from the public reference resources provided by the regular video site.<br>
-The animation drama resources provided by this site are for testing purposes only. If you need to watch, please visit the website of all parties to the screening rights. The producer needs your support for genuine!</p>
-<h2 id="about-this-clause">About this clause</h2>
-<p>We may modify the above terms or any additional terms that apply to a particular service. We will post a notice of the modification of these terms on this page. We will post a notice of the modification of the additional terms in the applicable service. The application of all modifications is not retroactive and will take effect after 14 days or more of publication. However, special modifications to the new features of the service or modifications made for legal reasons will take effect immediately. If you do not agree to the terms of the service, you should stop using the service.<br>
-In the event of a conflict between these Terms and Additional Terms, the Additional Terms will prevail.</p>
-<p>This clause governs the relationship between MONの小屋 and you and does not create any third party beneficial rights.</p>
-<p>If you do not comply with these Terms and we do not act immediately, it does not mean that we waive any rights we may have.</p>
-<p>If a clause cannot be enforced, this will not affect the validity of the other clauses.</p>
-<hr>
-<blockquote>
-<h5 id="if-you-need-to-contact-us-here-are-our-contact-details"><em><strong>If you need to contact us, here are our contact details:</strong></em></h5>
-<h5 id="email-info-3onemqqcom"><em><strong>EMail: info-3onem@qq.com</strong></em></h5>
-</blockquote>
-<hr>
-<p>This Regulation was published on June 1, 2019</p>
-<p>Last modified on August 19, 2020</p>
-<p>Mon</p>
-<p>Copyright © 2015-2020   3ON EM</p>
+  @media screen and (max-width: 1200px) {
+    .navbar {
+      max-width: 100vw;
+    }
+  }
 
-            </div>
-            <hr style="width: 80%;">
-            
-            <div class="donateContainer">
-                <span class="donatebtn">赏</span>
-            </div>
-            <div class="donateContainer">
-                <img src="https://dd-static.jd.com/ddimg/jfs/t1/172998/28/20564/648817/60f787b6E809a0590/44762a88897d7bd5.png" alt="" class="donate">
-            </div>
-            
-            <div class="postfooter">
-                <ul class="post-copyright">
-                    <li><strong>文章作者：</strong>Mon</li>
-            <li><strong>原文链接：</strong>https://imon.eu.org/privacy-policy-terms-of-service-en/</li>
-            <li><strong>版权声明：</strong>本博客所有文章除特别声明外，均采用<i class="fa fa-fw fa-creative-commons"></i>BY-NC-SA
-                许可协议。转载请注明出处！</li>
-            </ul>
-        </div>
+  @media screen and (max-width:1200px) and (min-width: 768px) {
+    @media (min-width: 768px) {
+      .navbar-nav {
+        float: right;
+        margin: 0;
+      }
+    }
+  }
+
+  @media screen and (max-width:768px) {
+    .mbapspan {
+      padding: 0;
+    }
+  }
+</style>
+<div class="pjaxloading"  onclick="pjaxloadingClose()">
+  <div class="loadingbackground"></div>
+  <div id="loading">
+    <div class="loading">
+    </div>
+  </div>
+</div>
+<nav class="navbar navbar-inverse navbar-fixed-top navmobile">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#barmenu"
+        aria-expanded="false" id="barbutton">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a data-pjax class="navbar-brand" href="https://imon.eu.org">Monの小屋&nbsp;&nbsp;|</a>
+      <span class="navbar-brand mbapspan"><i id="mbaplayer" class="fa fa-play-circle-o" aria-hidden="true"
+          style="font-size: 28px;top: 12px;position: absolute;" onclick="aplayerPlay();"></i></span>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="barmenu">
+      <ul class="nav navbar-nav">
         
-            <div class="shareContainer">
-                <div class="share" style="height:30px;background: white;">
-                    <a class="qq" href=""><i><img class="shareicon"
-                                src="https://imon.eu.org/media/images/qqs.png" alt=""></i></a>
-                    <a class="wechat" href=""><i><img class="shareicon"
-                                src="https://imon.eu.org/media/images/wechats.png" alt=""></i></a>
-                    <a class="weibo" href=""><i><img class="shareicon"
-                                src="https://imon.eu.org/media/images/weibos.png" alt=""></i></a>
-                    <a class="qzone" href=""><i><img class="shareicon"
-                                src="https://imon.eu.org/media/images/qzones.png" alt=""></i></a>
-                    <a class="douban" href=""><i><img class="shareicon"
-                                src="https://imon.eu.org/media/images/doubans.png" alt=""></i></a>
-                    <a class="facebook" href=""><i><img class="shareicon"
-                                src="https://imon.eu.org/media/images/facebooks.png" alt=""></i></a>
-                    <a class="twitter" href=""><i><img class="shareicon"
-                                src="https://imon.eu.org/media/images/twitter.png" alt=""></i></a>
+        
+        <li>
+          <a data-pjax href="/">
+            首页
+          </a>
+        </li>
+        
+        
+        
+        <li>
+          <a data-pjax href="/archives">
+            归档
+          </a>
+        </li>
+        
+        
+        
+        <li>
+          <a data-pjax href="/tags">
+            标签
+          </a>
+        </li>
+        
+        
+        
+        <li>
+          <a data-pjax href="https://imon.eu.org/about">
+            关于
+          </a>
+        </li>
+        
+        
+        
+        
+          
+        <li><a data-pjax href="https://imon.eu.org/friends">友链</a></li>
+
+        
+        </ul>
+      </div><!-- /.navbar-collapse -->
+    </div><!-- /.container-fluid -->
+  </nav>
+
+
+  <!-- 引入jQuery核心js文件 -->
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js"></script>
+  <script>
+    let btstate = false;
+    var bt = $("#barbutton");
+    var bm = $("#barmenu");
+    bt.click(function () {
+      dropdown();
+    })
+    function dropdown() {
+      console.log(btstate);
+      //下拉
+      if (btstate == false) {
+        bt.removeClass("collapsed");
+        bt.attr("aria-expanded", "true");
+        bm.attr("aria-expanded", "true")
+        bm.fadeIn(700);
+        btstate = true;
+      }
+      else {
+        bt.addClass("collapsed");
+        bt.attr("aria-expanded", "false");
+        bm.removeClass("in");
+        bm.hide();
+        bm.attr("aria-expanded", "false");
+        btstate = false;
+      }
+    }
+  </script> 
                 </div>
-            </div>
-            
-        <div id="otherpost">
-            
-            
-        </div>
-    </div>
-    </div>
-    </div>
-    <!-- 弹窗 -->
-    <div id="myModal" class="modal">
-        <img class="modal-content" id="img01">
-    </div>
-</body>
+                <div id="main" class="col-xs-12 col-sm-12 col-md-12 col-lg-7">
+                    <div class="mobilebar">
+                        <img src="" alt="" class="plbg">
 <script>
-    //文章阅读热度
-    var pl = $("#pl").html();
-    var rootaddr = $("#rootaddr").html();
-    pl = pl.replace(rootaddr, "");
-    $("#hotnum").attr('id', pl);
+    var bgchoice = "link";
+    if(bgchoice=='default')
+        var plbgurl = ""
+    else  
+        var plbgurl = ""
+    $(".plbg").attr("src",plbgurl);
+    $(".plbg").fadeIn(200);
 </script>
-                    <div class="toc-container">
-                        <ul class="markdownIt-TOC">
-<li><a href="#privacy-policy-terms-of-service">Privacy Policy (Terms of Service)</a><br>
-*<br>
-*<br>
-* <a href="#welcome-to-mon%E3%81%AE%E5%B0%8F%E5%B1%8B-thank-you-for-using-our-service-these-terms-of-service-terms-of-service-apply-to-your-relationship-with-the-website-and-related-services-services-between-mon%E3%81%AE%E5%B0%8F%E5%B1%8B-hereafter-referred-to-as-mon%E3%81%AE%E5%B0%8F%E5%B1%8B-this-site-or-us">Welcome to MONの小屋 Thank you for using our service. These Terms of Service (“Terms of Service”) apply to your relationship with the website and related services (“Services”) between MONの小屋 (hereafter referred to as “MONの小屋”, “This site ” or “us”).</a>
-<ul>
-<li><a href="#use-service">Use service</a>
-<ul>
-<li><a href="#privacy">privacy</a></li>
-<li><a href="#comment">comment</a></li>
-<li><a href="#media">media</a></li>
-<li><a href="#cookies">Cookies</a></li>
-<li><a href="#embedded-content-from-other-sites">Embedded content from other sites</a></li>
-<li><a href="#how-long-do-we-keep-your-information">How long do we keep your information?</a></li>
-<li><a href="#what-is-your-right-to-your-information">What is your right to your information?</a></li>
-<li><a href="#where-do-we-send-your-information">Where do we send your information?</a></li>
-</ul>
-</li>
-<li><a href="#copyright-protection">Copyright Protection</a>
-<ul>
-<li><a href="#about-the-software-in-our-service">About the software in our service</a></li>
-<li><a href="#warranty-and-disclaimer">Warranty and Disclaimer</a></li>
-<li><a href="#intellectual-property">Intellectual property</a></li>
-<li><a href="#audiovisual-copyright">Audiovisual copyright</a></li>
-</ul>
-</li>
-<li><a href="#about-this-clause">About this clause</a><br>
-*<br>
-*<br>
-* <a href="#if-you-need-to-contact-us-here-are-our-contact-details"><em><strong>If you need to contact us, here are our contact details:</strong></em></a><br>
-* <a href="#email-info-3onemqqcom"><em><strong>EMail: info-3onem@qq.com</strong></em></a></li>
-</ul>
-</li>
-</ul>
-
                     </div>
-                    <div class="tog">
-                        <div class="toggleContainer">
-                            <div class="toggle">
-                                <i class="fas fa-angle-double-up"></i>
-                            </div>
-                        </div>
-                    </div>
+                    <div id='speak'>
+</div>
+    <!-- 使用markdown渲染 -->
+    <!-- <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/ispeak-bber/ispeak-bber-md.min.js" charset="utf-8" ></script> -->
+    <!-- 不使用markdown渲染 -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/ispeak-bber/ispeak-bber.min.js" charset="utf-8"></script>
+    <!-- 解析微信表情（参考：https://github.com/buddys/qq-wechat-emotion-parser） -->
+    <!-- <script src="https://cdn.jsdelivr.net/gh/buddys/qq-wechat-emotion-parser@master/dist/qq-wechat-emotion-parser.min.js"></script> -->
+<script>
+    var limitstr = '5'
+    lnum = parseInt(limitstr)
+    ispeakBber.init({
+            el: '#speak', // 容器选择器
+            name: '', // 显示的昵称
+            envId: '', // 环境id
+            region: 'ap-shanghai', // 腾讯云地址，默认为上海
+            limit: lnum, // 每次加载的条数，默认为5
+            avatar: '',
+            fromColor: 'rgb(245, 150, 170)', // 下方标签背景颜色 默认 rgb(245, 150, 170)
+            loadingImg: 'https://7.dusays.com/2021/03/04/d2d5e983e2961.gif', // 自定义loading的图片，示例值为默认值
+            dbName: 'talks' // 数据的名称，默认talks，避免有人的命名不是这个，所以加入此配置字段。
+        })
+        .then(function () {
+            // 哔哔加载完成后的回调函数，你可以写你自己的功能
+            console.log('哔哔 加载完成')
+    })
+</script>
                     <!---------------------------- 评论系统👇 ------------------------->
                     <div id="comment" class="comment">
                         <div class="commentcontainer">
-                            
-                                
-                                    
+                           
+                              
+                                  
         <div id="vcomments">
         </div>
         <script>
@@ -1318,23 +1111,21 @@ In the event of a conflict between these Terms and Additional Terms, the Additio
 
 
                                     <div class="clear"></div>
-                                
-                            
-                        </div>
-                    </div>
-                    <!---------------------------- 评论系统👆 ------------------------->
+                              
+                              
+                          </div>
+                      </div>
+                     <!---------------------------- 评论系统👆 ------------------------->
                 </div>
-                <!-- main标签，pjax渲染时加载以上内容👆 -->
                 <div class="col-md-1 col-lg-2"></div>
-                <div id="bg">
-                </div>
+                <!-- ----------------左侧菜单栏html 👆-------------------------------------->
+                <!------------------ 顶部菜单栏html👇--------->
+                
+                <!------------------ 顶部菜单栏html👆--------->
+                <div class="col-xs-6 col-sm-3"></div>
             </div>
-            <!-- ----------------左侧菜单栏html 👆-------------------------------------->
             
-        </div>
-        <!-- aplayer播放器加载👇 -->
-            
-            <head>
+                <head>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css">
 </head>
 
@@ -1396,39 +1187,29 @@ In the event of a conflict between these Terms and Additional Terms, the Additio
         }
     }
 </script>
+                
+        </div>
+        <div id="bg">
+        </div>
+        <!------- 背景图加载方式👇----- -->
+        <div id="bgchoice" style="display: none">link
+            </div>
             
-        <!-- aplayer播放器加载👆 -->
+            <div id="bgurl" style="display:none">https://ae01.alicdn.com/kf/H2e6584520269468e86ce12d0bc1c707fQ.png</div>
+               
+        <!------- 背景图加载方式👆----- -->
     </div>
-    
 
-    <!-- 背景图加载方式👇 -->
-    <div id="bgchoice" style="display: none">link
-                </div>
-                
-                <div id="bgurl" style="display:none">https://ae01.alicdn.com/kf/H2e6584520269468e86ce12d0bc1c707fQ.png</div>
-                
-    <!-- 背景图加载方式👆 -->
+        <div id="landlord">
+            <div class="message" style="opacity:0"></div>
+        <canvas id="live2d" width="240" height="286" class="live2d"></canvas>
+        </div>
+        <div id="domainname" style="display:none">https://imon.eu.org
+        </div>
 </body>
 
-<script>
-    //初始化
-    //更换twikoo头像
-    setTimeout(replaceAvatar,1000);
-    setTimeout(replaceAvatar,2000);
-    setTimeout(replaceAvatar,8000);
-    // --------为每张图片添加懒加载（lazyload）标签-->懒加载功能 👇------------
-    lazyload();
-    //为文章内所有代码块添加代码复制功能 👇
-    codeinit();
-    // ------代码高亮显示功能-------------
-    hljs.initHighlightingOnLoad();
-    if (shareChoice)
-        shareInit();
-    if (donateChoice)
-        donateInit();
-</script>
-
-<!------------------ 加载live2d模型功能（看板娘）👇 ---------------->
+</html>
+<!-------------------- live2d功能👇 --------------------------->
 
 <script type="text/javascript">
     var message_Path = '/live2d/'
@@ -1440,29 +1221,7 @@ In the event of a conflict between these Terms and Additional Terms, the Additio
     loadlive2d("live2d", "https://imon.eu.org/media/live2d/assets/tororo.model.json");
 </script>
 
-<!------------------ 加载live2d模型功能（看板娘）👆 ---------------->
-
-
-<!----------------------- 返回顶部按钮功能👇 --------------------->
-<script>
-    $(function () {
-        $('.toggleContainer').click(function () {
-            $('html,body').animate({
-                scrollTop: '0px'
-            }, 800);
-        });
-        $(window).scroll(function () {
-            var st = $(window).scrollTop();
-            if (st > 30) {
-                $(".toggleContainer").fadeIn(400);
-            } else {
-                $(".toggleContainer").fadeOut(100);
-            }
-        });
-    });
-</script>
-<!----------------------- 返回顶部按钮功能👆 --------------------->
-
+<!-------------------- live2d功能👆 --------------------------->
 
 <!------------ 加载全局背景图功能👇（开始时没有写好，这功能有点鸡肋/(ㄒoㄒ)/~~） -->
 <script>
@@ -1473,32 +1232,11 @@ In the event of a conflict between these Terms and Additional Terms, the Additio
         for (var i = 0; i < 3; i++)
             bgurl = bgurl.replace("\\", "/");
     bg.css("background", "url('" + bgurl + "')");
+
+    window.onload = function () {
+        aplayerbtnInit();
+    }
 </script>
 <!------------ 加载全局背景图功能👆（开始时没有写好，这功能有点鸡肋/(ㄒoㄒ)/~~） -->
 
-
-
-
 <script src="https://imon.eu.org/media/js/index.js"></script>
-
-
-<script>
-    //加载后的事件同步（阅读量、移动端评论等
-    window.onload = function () {
-    //代码块高亮渲染
-    document.querySelectorAll('pre code').forEach((block) => {
-            hljs.highlightBlock(block);
-    });
-        getHotnum();
-        var sharepc = $(".share").eq(0).html();
-        $(".share").eq(1).html(sharepc);   //插件只会寻找一个分享标签渲染，所以需要手动添加到移动端
-        aplayerbtnInit();
-        $(".hljs").css({
-            "padding": "20px"
-        })
-    }
-</script>
-
-<!-- <script src="https://imon.eu.org/media/js/av-min.js"></script> -->
-<!-- <script src="https://cdn.jsdelivr.net/npm/leancloud-storage@3.13.0/dist/av-min.js"></script> -->
-<!-- <script src="https://cdn.jsdelivr.net/npm/leancloud-storage@4.6.1/dist/av-live-query-min.js"></script> -->

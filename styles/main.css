@@ -134,6 +134,7 @@
     filter: blur(3px);
     /*虚化值，越大越模糊*/
     position: fixed;
+    left: 0;
   }
   .nav-large {
     display: block;
@@ -442,8 +443,8 @@ hr {
   top: -0.5em;
   left: 0;
   width: 100%;
-  color: silver;
   transition: 0.3s ease-out;
+  color: antiquewhite;
 }
 .menucontainer span::before {
   clip-path: polygon(0 0, 100% 0, 100% 50%, 0 50%);
@@ -703,14 +704,14 @@ hr {
   width: 30px;
   margin-left: 30%;
 }
-#loading {
+#loading-aname {
   position: fixed;
   display: flex;
   left: 45vw;
   top: 30vh;
   z-index: 30;
 }
-.loading {
+.loading-aname {
   width: 200px;
   height: 200px;
   box-sizing: border-box;
@@ -718,8 +719,8 @@ hr {
   border-top: 15px solid #e74c3c;
   animation: a1 2s linear infinite;
 }
-.loading::before,
-.loading::after {
+.loading-aname::before,
+.loading-aname::after {
   content: '';
   width: 200px;
   height: 200px;
@@ -729,11 +730,11 @@ hr {
   box-sizing: border-box;
   border-radius: 50%;
 }
-.loading::before {
+.loading-aname::before {
   border-top: 15px solid #3498db;
   transform: rotate(240deg);
 }
-.loading::after {
+.loading-aname::after {
   border-top: 15px solid #e67e22;
   transform: rotate(120deg);
 }
@@ -761,30 +762,30 @@ hr {
   display: none;
 }
 @media (min-width: 330px) {
-  #loading {
+  #loading-aname {
     top: 40vh;
     left: 25vw;
   }
 }
 @media (min-width: 468px) {
-  #loading {
+  #loading-aname {
     top: 40vh;
     left: 26vw;
   }
 }
 @media (min-width: 768px) {
-  #loading {
+  #loading-aname {
     top: 40vh;
     left: 40vw;
   }
 }
 @media (min-width: 992px) {
-  #loading {
+  #loading-aname {
     top: 30vh;
   }
 }
 @media (min-width: 1200px) {
-  #loading {
+  #loading-aname {
     top: 30vh;
     left: 45vw;
   }
@@ -1095,6 +1096,58 @@ a:hover {
 .elegloading {
   padding: 50px;
 }
+#bbonetalkContainer {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding-top: 5px;
+  height: 50px;
+  padding-left: 40px;
+  background: rgba(239, 52, 115, 0.5);
+  border-radius: 5px;
+  text-align: left;
+  display: block;
+  color: white;
+  font-size: 18px;
+}
+#bbonetalkContainer a {
+  font-family: kaiti;
+  color: white;
+  font-size: 18px;
+}
+#bber-talk {
+  display: -webkit-flex;
+  display: flex;
+  width: 100%;
+  line-height: 2em;
+  height: 45px;
+  max-width: 760px;
+  text-align: left;
+  padding: 5px 15px;
+  margin-bottom: 3em;
+  position: relative;
+  background-color: var(--light-header);
+  border-radius: 8px;
+  font-size: 15px;
+}
+#bber-talk svg {
+  fill: currentColor;
+  vertical-align: middle;
+  display: inline;
+  margin-right: 5px;
+}
+.talk-list {
+  margin: 0;
+  max-height: 35px;
+  overflow: hidden;
+}
+.talk-list li {
+  list-style: none;
+  margin-bottom: 10px;
+  width: 100%;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
 @media screen and (max-width: 1200px) {
   #post {
     width: 100%;
@@ -1131,6 +1184,9 @@ a:hover {
     cursor: pointer;
     border-radius: 5px;
     width: 90%;
+  }
+  #bbonetalkContainer {
+    display: none;
   }
 }
 @media screen and (max-width: 1024px) {
@@ -1573,7 +1629,7 @@ a:hover {
 }
 .text p,
 .text ul {
-  color: #797979;
+  color: rgba(0, 0, 0, 0.7);
 }
 .text h1,
 .text h2,
@@ -1847,6 +1903,9 @@ tr:nth-child(2n) {
   -webkit-animation: fade-in 1s;
   /*针对webkit内核*/
 }
+.commentcontainer {
+  text-align: left;
+}
 @keyframes fade-in {
   0% {
     opacity: 0;
@@ -2107,6 +2166,9 @@ summary {
   .allcontent #vcomments {
     margin-top: 100px;
   }
+  .hotnum {
+    font-size: 18px;
+  }
 }
 @media screen and (max-width: 1200px) {
   #articlecontent {
@@ -2343,6 +2405,8 @@ summary {
 #friendscontainer {
   position: relative;
   z-index: 999;
+  overflow: auto;
+  padding-bottom: 30px;
 }
 #friendsrule {
   background: rgba(147, 213, 220, 0.4);
@@ -3054,7 +3118,6 @@ a {
   color: white;
 }
 .tk-content span {
-  display: flex;
   text-align: left;
 }
 .twikoo p {
@@ -3103,8 +3166,88 @@ a {
 .vinput::placeholder {
   color: white;
 }
+#ispeak .count {
+  margin-top: 30px;
+  font-size: 25px;
+  color: ghostwhite;
+}
+#ispeak button {
+  width: 80%;
+}
+@media screen and (min-width: 1200px) {
+  #ispeak .xk-card {
+    background: rgba(255, 255, 255, 0.5);
+  }
+  #ispeak .xk-card-content img {
+    max-width: 1000px;
+    width: 60%;
+    margin-right: 40%;
+    height: auto;
+    display: flex;
+    left: 10px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+  }
+  #ispeak .xk-card-content {
+    font-size: 18px;
+    font-weight: 600;
+    text-align: left;
+    line-height: 1.5;
+  }
+}
+@media screen and (max-width: 1024px) {
+  #ispeak .xk-card {
+    background: rgba(255, 255, 255, 0.5);
+  }
+  #ispeak .xk-card-content img {
+    max-width: 800px;
+    width: 60%;
+    margin-right: 40%;
+    margin-bottom: 10px;
+  }
+}
+@media screen and (max-width: 768px) {
+  #ispeak .xk-card {
+    background: rgba(255, 255, 255, 0.5);
+  }
+  #ispeak .xk-card-content img {
+    max-width: 760px;
+    width: 60%;
+    margin-right: 40%;
+    margin-bottom: 10px;
+  }
+}
+@media screen and (max-width: 480px) {
+  #ispeak .xk-card {
+    background: rgba(255, 255, 255, 0.5);
+  }
+  #ispeak .xk-card-content img {
+    width: 100%;
+    margin-right: 0%;
+    margin-bottom: 10px;
+  }
+}
 
-        .navbar-inverse{
-          background-color: #212529;
+      .sitename {
+        color: #ffe066;
+      }
+    
+        .menubutton {
+          color: #66d9e8;
+        }
+
+        .menucontainer span::before,
+        .menucontainer span::after {
+          color:#66d9e8;
+          content: attr(data-text);
+          position: absolute;
+          top: -0.5em;
+          left: 0;
+          width: 100%;
+          transition: 0.3s ease-out;
+        }
+
+        .menubutton:visited{
+          color: #66d9e8;
         }
       
