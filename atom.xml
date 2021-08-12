@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://imon.eu.org</id>
     <title>Monの小屋</title>
-    <updated>2021-07-23T13:33:56.833Z</updated>
+    <updated>2021-08-12T04:20:00.961Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://imon.eu.org"/>
     <link rel="self" href="https://imon.eu.org/atom.xml"/>
@@ -10,74 +10,6 @@
     <logo>https://imon.eu.org/images/avatar.png</logo>
     <icon>https://imon.eu.org/favicon.ico</icon>
     <rights>All rights reserved 2021, Monの小屋</rights>
-    <entry>
-        <title type="html"><![CDATA[【有手就行】——解决学校平板不能网上冲浪的限制 (2021-06-09更新)]]></title>
-        <id>https://imon.eu.org/you-shou-jiu-xing-duo-chong-fang-fa-rang-xue-xiao-fa-gei-ni-de-ping-ban-da-you-yong-chu/</id>
-        <link href="https://imon.eu.org/you-shou-jiu-xing-duo-chong-fang-fa-rang-xue-xiao-fa-gei-ni-de-ping-ban-da-you-yong-chu/">
-        </link>
-        <updated>2021-01-30T13:35:58.000Z</updated>
-        <content type="html"><![CDATA[<h2 id="0-1前言">0-1,前言</h2>
-<p>学校发了个平板来给我们用,不过有一大堆限制。(特别是领创平板管理这个MDM)</p>
-<p>所以呢，我花了半个学期的时间来想破解平板的方法。</p>
-<p>直到有一天，班上的网络出问题了，所有网页都跳转到WI-FI修复页面。</p>
-<p>就这样,我想到方法来调教这平板的方法。<br>
- </p>
-<h3 id="0-2此文的设备环境">0-2<strong>此文的设备环境</strong></h3>
-<blockquote>
-<p>PC：Windows10 专业版 (2004)</p>
-<p>路由器：小米路由器Mesh</p>
-<p>平板：华为平板 C5</p>
-<p>Android版本：7.0</p>
-<p>Linspirer MDM版本：zijietiaodong_init_5.0.220</p>
-<p>翼课学生版本：3.9.2</p>
-<p>X5内核(TBS)版本：045514</p>
-<p>X5内核(TBS)包装层版本号：43903</p>
-</blockquote>
-<hr>
-<p style="text-align: center;"><span style="color: #ff0000; font-family: 'comic sans ms', sans-serif;"><strong>严正声明：本文仅限于技术讨论与分享，严禁用于非法途径。</strong></span></p>
-<hr>
-<h2 id="1-0-最终方案-重定向法">1-0  最终方案 —— 重定向法</h2>
-<p> </p>
-<h3 id="1-1-使用电脑共享hosts">1-1 使用电脑共享hosts</h3>
-<p>先在电脑上设置hosts,你设置的hosts可以为任何你想切换的域名。</p>
-<p>在这以翼课学生APP为例,在翼课学生APP中有名为“应用举报”或“应用评价”的入口 前往的链接域名均为<em>system.eduyun.cn</em></p>
-<p>在此你可以在电脑上的hosts文件添加新的hosts规则。(示例的规则跳转到Github)</p>
-<pre><code class="language-lua">52.74.223.119 system.eduyun.cn
-</code></pre>
-<p>1-2；打开电脑上的“网络和Internet”设置</p>
-<p>1-3；开启移动热点功能,并在平板上连接此移动热点来测试。</p>
-<p> </p>
-<hr>
-<h3 id="2-0永久设置方法"><strong>2-0,永久设置方法</strong></h3>
-<p>电脑不一定一直在身边怎么办？</p>
-<p>没关系,以下有一个方法可以一劳永逸。</p>
-<p>【<strong>注意:使用此方法需阁下使用的软件拥有x5内核</strong>】</p>
-<p>先使用1-1的方法让平板连上外网</p>
-<p>然后进入x5内核的DebugX5页面。</p>
-<p>点击“信息”然后把vConsole调试功能勾选即可。</p>
-<hr>
-<h2 id="3-0-附赠">3-0, 附赠</h2>
-<p> </p>
-<h3 id="弄好了之后怎么玩-随文附赠一些有用的网站没给广告费">弄好了之后怎么玩? 随文附赠一些有用的网站(没给广告费)</h3>
-<p><a href="https://cg.163.com/">网易云游戏平台</a></p>
-<p><a href="https://jiwan.qq.com/mp.html">腾讯即玩</a></p>
-<p><a href="https://play.geforcenow.com/">Nvidia GeForce Now</a></p>
-<p> </p>
-<h2 id="4-0参考链接">4-0,参考链接</h2>
-<blockquote>
-<p>https://patents.google.com/patent/CN105338072A/zh	&quot;CN105338072A - 一种http重定向方法及路由设备&quot;<br>
-https://zh.wikipedia.org/wiki/Help:如何访问维基百科	&quot;帮助:如何访问维基百科 - 维基百科，自由的百科全书&quot;<br>
-https://www.cnblogs.com/lovling/p/8116867.html	&quot;kali linux 局域网 dns 劫持 - 被遗忘的优雅 - 博客园&quot;<br>
-https://blog.csdn.net/weixin_39190897/article/details/104615741	&quot;Kali渗透-DNS域名劫持与钓鱼_True-CSDN博客&quot;<br>
-https://www.sohu.com/a/214538720_354899	&quot;用360随身WiFi钓鱼&quot;<br>
-https://blog.csdn.net/Leslie___Cheung/article/details/79382197	&quot;Windows下用某品牌随身WiFi搭建一个钓鱼热点&quot;</p>
-</blockquote>
-<p> <br>
- <br>
-<span style="color: #ff0000;"><em>注:本文须经作者同意后才可转载,请在评论中留下您的联系方式并说明转载平台，谢谢。</p>
-<p>同时欢迎大家在评论区里讨论其它可行的方法</em></span></p>
-]]></content>
-    </entry>
     <entry>
         <title type="html"><![CDATA[苏联笑话合集 ! 共整理730条笑话【自整理/MOBI+AZW3+EPUB+在线阅读】]]></title>
         <id>https://imon.eu.org/sovietjokes/</id>
